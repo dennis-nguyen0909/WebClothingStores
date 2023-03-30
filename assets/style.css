@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.headerFisrt{
+    width: 100%;
+    background-color: black;
+    height: 40px;
+}
+.headerFirst-title p{
+    color: white;
+    font-weight: 10;
+    font-size: 13px;
+    display: inline-block;
+
+
+}
+.headerFirst-title button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.headerFirst-title i {
+    color: aliceblue;
+}
+.headerFirst-text{
+   padding: 0 40px;
+    height: 100%;
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.headerTwo-title{
+    /* position: fixed; */
+    width: 100%;
+    height: 70px;
+    display: flex;
+ 
+    /* justify-content: flex-end;
+     */
+     justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    padding: 0 12px;
+    border-bottom: solid 1px #ccc;
+}
+.headerTwo-title i {
+    padding: 0 16px;
+    font-size: 16px;
+}
+.headerTwo-title-btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: 100;
+    transition: transform 400ms ;
+}
+.headerTwo-title-btn :hover{
+   transform: scale(1.4);
+}
+.headerTwo-text-one{
+ position: absolute;
+ right: 0;
+}
+.header{
+  
+    width: 100%;
+    height: 50px;
+    /* background-color: red; */
+    border-bottom: solid 1px #ccc;
+}
+.header .navigation{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    color: black;
+}
+
+/* .header .navigation :hover{
+    border-bottom: solid 1px black;
+    padding-bottom: 10px;
+    
+} */
+
+
