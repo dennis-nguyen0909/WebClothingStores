@@ -1,0 +1,59 @@
+.product{
+    border-top: 1px solid #ccc;
+    width: 100%;
+    height: 50vh;
+    
+}
+.product .product-noibat{
+    font-size: 15px;
+    margin-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    /* position: relative; */
+
+    justify-content: center;
+}
+.product-shirt{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+.product-shirt-1{
+    position: relative;
+}
+.product-shirt-noibat .product-shirt-1{
+
+    width: 350px;
+    height: 370px;
+    border: 1px solid #ccc;
+}
+.prodct-shirt-title{
+    font-size: 15px;
+    /* display: -webkit-box; */
+    /* -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; */
+    overflow: hidden;
+    line-height: 1.5;
+    color: #7f7f7f;
+}
+.prodct-shirt-title p{
+    font-size: 15px;
+    line-height: 1.5;
+    color: black;
+
+}
+.product-shirt-noibat .product-shirt-2{
+    position: absolute;
+    width: 350px;
+    left: 0;
+    height: 370px;
+    border: 1px solid #ccc;
+    transition: all ease-out  .7s;
+}
+.product-shirt :hover .product-shirt-2{
+    opacity: 0;
+    cursor: pointer;
+    
+}
