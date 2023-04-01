@@ -1,3 +1,4 @@
+// =========================Form: Dang Nhao========================
 const btnCloseModalElm = document.getElementById('btnCloseModal');
 const formLoginElm = document.getElementById('formLogin');
 console.log(formLoginElm)
@@ -20,17 +21,30 @@ containerFormElm.addEventListener('click', function(event) {
     event.stopPropagation();
 });
 
-
-const btnDangKy=document.getElementById('btnDangKy');
+// ========================Form:DANG KY========================
+const btnDangKy=document.querySelector('.auth-form__dangky--theA');
 console.log(btnDangKy);
 
-const modalDangKy=document.getElementById('modal-dangky');
+const modalDangKy=document.getElementById('modal-dangky-btn');
 console.log(modalDangKy)
 
-modalDangKy.addEventListener('onclick',function(){
-btnDangKy.style.display='block';
+btnDangKy.addEventListener('click',function(){
+modalDangKy.style.display='block';
 });
 
+const btnCloseDangKy=document.getElementById('btnCloseModalTwo');
+btnCloseDangKy.addEventListener('click', function() {
+    modalDangKy.style.display = 'none';
+});
+const containerFormDangKy=document.getElementById('containerFormDangKy');
+
+containerFormDangKy.addEventListener('click',function(event){
+    console.log(event);
+event.stopPropagation();
+});
+modalDangKy.addEventListener('click', function() {
+    modalDangKy.style.display = 'none';
+});
 
 
 

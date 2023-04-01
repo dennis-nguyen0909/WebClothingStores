@@ -18,16 +18,19 @@
     height: 100vh;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    
     /* background-color: red; */
 }
-.product-shirt-1{
+.product-shirt-noibat{
     position: relative;
+    padding:20px 0;
 }
 .product-shirt-noibat .product-shirt-1{
 
     width: 350px;
     height: 370px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
 }
 .prodct-shirt-title{
     font-size: 15px;
@@ -49,7 +52,7 @@
     width: 350px;
     left: 0;
     height: 370px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     transition: all ease-out  .7s;
 }
 .product-shirt :hover .product-shirt-2{
