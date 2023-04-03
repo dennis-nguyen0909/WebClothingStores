@@ -1,0 +1,66 @@
+.clothing{
+    border-top: 1px solid #ccc;
+    width: 100%;
+    height: 130vh;
+    position: relative;
+    
+}
+.clothing .clothing-noibat{
+    font-size: 15px;
+    margin-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+
+    justify-content: center;
+}
+.clothing-shirt{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    
+    /* background-color: red; */
+}
+.clothing-shirt-noibat{
+    position: relative;
+    padding:20px 0;
+}
+.clothing-shirt-noibat .clothing-shirt-1{
+
+    width: 350px;
+    height: 370px;
+    /* border: 1px solid #ccc; */
+}
+.clothing-shirt-title{
+    font-size: 15px;
+    /* display: -webkit-box; */
+    /* -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; */
+    overflow: hidden;
+    line-height: 1.5;
+    color: #7f7f7f;
+}
+.clothing-shirt-title p{
+    font-size: 15px;
+    line-height: 1.5;
+    color: black;
+
+}
+.clothing-shirt-noibat .clothing-shirt-2{
+    position: absolute;
+    width: 350px;
+    left: 0;
+    height: 370px;
+    /* border: 1px solid #ccc; */
+    transition: all ease-out  .7s;
+}
+.clothing-shirt :hover .clothing-shirt-2{
+    opacity: 0;
+    cursor: pointer;
+    
+}
+.clothing-shirt-price .clothing-shirt-title{
+    display: flex;
+    justify-content: space-around;
+}
