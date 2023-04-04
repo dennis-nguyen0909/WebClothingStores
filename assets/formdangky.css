@@ -201,3 +201,25 @@ font-size: 1.4rem;
     cursor: pointer;
     opacity: 0.6;
 }
+#btnCloseModalTwo{
+    position:absolute;
+    background-color:transparent;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: transparent;
+    /* border-radius: 13px; */
+    font-size: 35px;
+    right: 0;
+    top:0;
+}
+#btnCloseModalTwo{
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+#btnCloseModalTwo:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    opacity: 0.6;
+}

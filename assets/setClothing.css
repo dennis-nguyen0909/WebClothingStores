@@ -1,8 +1,9 @@
 .clothing{
     border-top: 1px solid #ccc;
     width: 100%;
-    height: 130vh;
+    height: 400vh;
     position: relative;
+    margin-top: 260px;
     
 }
 .clothing .clothing-noibat{
@@ -14,11 +15,12 @@
     justify-content: center;
 }
 .clothing-shirt{
-    width: 100%;
+    /* width: 100%; */
     height: 100vh;
     display: flex;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
+    
+    flex-wrap: wrap;
     
     /* background-color: red; */
 }
@@ -28,8 +30,9 @@
 }
 .clothing-shirt-noibat .clothing-shirt-1{
 
-    width: 350px;
-    height: 370px;
+    width: 600px;
+    height: 800px;
+    padding: 36px 0;
     /* border: 1px solid #ccc; */
 }
 .clothing-shirt-title{
@@ -49,9 +52,11 @@
 }
 .clothing-shirt-noibat .clothing-shirt-2{
     position: absolute;
-    width: 350px;
+    width: 600px;
+    height: 800px;
     left: 0;
-    height: 370px;
+    padding:36px 0;
+
     /* border: 1px solid #ccc; */
     transition: all ease-out  .7s;
 }

@@ -27,18 +27,6 @@
     padding: 10px 0;
 }
 
-/* Hover gach chan */
-li .line-Under {
-    width: 0;
-    height: 2px;
-    background-color: #000;
-    
-    transition: all .2s ease-in;
-  }
-  
-  li:hover .line-Under {
-    width: 100%;
-  }
   .modal__body{
     --growth-from:0.7;
     --growth-to:1;
@@ -78,3 +66,18 @@ li .line-Under {
     /* border-radius: 5px; */
 }
 
+
+
+
+/* Hover gach chan */
+li .line-Under {
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    
+    transition: all .2s ease-in;
+  }
+
+  li:hover .line-Under{
+    width: 100%;
+  }

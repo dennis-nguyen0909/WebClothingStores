@@ -186,12 +186,35 @@
     padding-top: 10px;
 }
 
-.auth-form__dangky--theA{
+/* .auth-form__dangky--theA{
    
     padding-top:12px;
     color: var(--blue-color);
     text-decoration: none;
+} */
+.link{
+    color: black;
+    border: transparent;
+    background-color: transparent;
 }
+
+.link {
+    position: relative;
+    padding: 0 0 2px;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 26px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+}  
+.link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 #btnDangKy{
     border: transparent;
     background-color: transparent;

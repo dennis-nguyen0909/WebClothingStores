@@ -34,6 +34,7 @@
     /* border: 1px solid #ccc; */
 }
 .product-shirt-title{
+    position: absolute;
     font-size: 15px;
     /* display: -webkit-box; */
     /* -webkit-line-clamp: 2;
@@ -41,6 +42,7 @@
     overflow: hidden;
     line-height: 1.5;
     color: #7f7f7f;
+    top: 0;
 }
 .product-shirt-title p{
     font-size: 15px;
@@ -68,8 +70,14 @@
     display: flex;
     justify-content: center;
     bottom: 0;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
 }
 .product-shirt-price .product-shirt-title{
     display: flex;
+    position: relative;
     justify-content: space-around;
+}
+.product-shirt-title{
+    position: absolute;
 }
