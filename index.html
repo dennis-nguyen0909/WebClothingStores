@@ -50,7 +50,7 @@
                     <button class="headerTwo-title-btn">
                         <p>Sản phẩm yêu thích</p>
                     </button>
-                    <button class="headerTwo-title-btn">
+                    <button id='iconSearch'class="headerTwo-title-btn">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                     <button class="headerTwo-title-btn">
@@ -163,23 +163,37 @@
          </ul>                       
         </ul>
     </div>
-        <div class="search">
-            <div class="search-btn">
-                    <h1>Levents®</h1>
-            </div>
-            <div class="search-btn">
-                <div class="search-btn-one">      
+    <div class="modal-search">
+        <div id='containerSearch'>
+
+            <div class="search">
+                <div class="search-btn">
+                        <h1 class="search-btn-text">Levents®</h1>
+                </div>
+                <div class="search-btn">
+                    <div class="search-btn-timkiem">
                             <i class="fa-solid fa-magnifying-glass"></i>
                             <input  class="input-search-1" type="text" placeholder="Search..."/>   
-                </div>
-            </div>
-            <div class="search-btn">
-                <div class="search-btn-one">
-                    <button class="btn btn-bosuutap">Cancel</button>
-                </div>
-            </div>
+                    </div>
+                    <div class="search-btn-child">
+                        <h2> Cụm từ tìm kiếm phổ biến</h2>
+                        <div class="search-title">
+                            <a href="" class="search-title-child">Áo levents</a>
+                            <a href="" class="search-title-child">Quần dài</a>
+                            <a href="" class="search-title-child">Áo khoác</a>
+                        </div>
     
+                    </div>
+                </div>
+                <div class="search-btn">
+                    <div class="search-btn-cancle">
+                        <button id="formCancle" class="btn-timkiem">Cancel</button>
+                    </div>
+                </div>
+        
+            </div>
         </div>
+    </div>
     <!-- BACKGROUND -->
     <div class="back">
         <img class="background" src="./img/1920x760-1920x988.png" alt="">

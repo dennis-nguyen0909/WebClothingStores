@@ -56,6 +56,28 @@ setInterval(function(){
   }
 }, 3000);
 
+// ==================FROM:SEARCH
+
+const modalSearch=document.querySelector('.modal-search');
+
+// const iconSearch=document.getElementById('icon-search');
+const formSearch = document.getElementById('iconSearch');
+console.log(modalSearch);
+console.log(formSearch);
+
+formSearch.addEventListener('click',function(){
+    modalSearch.style.display='block';
+
+});
+
+const formCancle=document.getElementById('formCancle');
+formCancle.addEventListener('click',function(){
+    modalSearch.style.display='none';
+});
+// modalSearch.addEventListener('click',function(){
+// modalSearch.style.display='none';
+// });
+
 
 
 
