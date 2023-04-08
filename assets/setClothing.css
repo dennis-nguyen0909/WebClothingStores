@@ -53,6 +53,8 @@
     
 }
 .clothing-shirt-price .clothing-shirt-title{
+    border: transparent;
+
     display: flex;
     justify-content: space-around;
 }
@@ -63,47 +65,59 @@
     width: 600px;
     height: 800px;
 }
-.btn-2{
+.btn-click {
     position: relative;
-    width: 180px;
-    text-decoration: none;
-    align-items: center;
-    height: 30px;
-    background-color:var(--black-color);
+    width: 200px;
+    height: 50px;
     border: transparent;
-    cursor: pointer;
-    color:white;
-    
+    background-color: rgb(0,0,0);
+    /* background-color:var(--white-color); */
+    /* color: var(--black-color); */
+    color: var(--white-color);
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    text-decoration: none;
 }
-.btn-2::before{
+
+.btn-click::after,
+.btn-click::before {
+    content: '';
     position: absolute;
-    content: " ";
-    left: 0;
-    top:0;
-    width: 100%;
-    height: 50%;
-    display: block;
-    transition: all ease-out .5s;
-    background-color: white;
-    color: black;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    /* background-color: rgb(0,0,0); */
+    background-color: rgba(255, 255, 255, 0.5);
+    color: var(--white-color);
+    /* background-color: white; */
+    transition: all .5s linear;
+    transform: scaleX(0);
+    z-index: 3;
 }
-.btn-2:hover::before{
-    height: 0;
-    cursor: pointer;
+
+
+.btn-click::before {
+    left: 0%;
+    transform-origin: right;
 }
-.btn-2::after{
-    position: absolute;
-    content: " ";
-    left: 0;
-    bottom:0;
-    width: 100%;
-    height: 50%;
-    display: block;
-    transition: all ease-out .5s;
-    background-color: white;
-    color: black;
+
+.btn-click::after {
+    transform-origin: left;
+    left: 50%;
 }
-.btn-2:hover::after{
-    height: 0;
-    cursor: pointer;
+
+.btn-click:hover::after,
+.btn-click:hover::before {
+    transform: scaleX(1);
+}
+
+.btn-click span {
+    position: relative;
+    z-index: 100;
+}
+.clothing-shirt-price span {
+    display: flex;
+    justify-content: center;
 }

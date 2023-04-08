@@ -4,7 +4,7 @@
     overflow: hidden;/*làm cho khung ở dưới đc bo vào do thằng con lớn hơn với thằng cha*/ 
     margin: auto;
     width: 500px;
-  margin-top: 235px;
+  margin-top: 200px;
     border:1px solid #ccc;
     position: relative;
     /* display: none; */
@@ -14,7 +14,7 @@
 }
 .auth-form__container__dangky{
 
-    padding:0 18px; 
+    padding:0 32px; 
 } 
 .auth-form__header__dangky{ 
   
@@ -62,11 +62,13 @@
 }  
 .btn-dangky{
     position: relative;
-    width: 400px;
+    /* width: 400px; */
+    width: 100%;
     height: 50px;
     background-color:var(--black-color);
     border: transparent;
     color: white;
+    cursor: pointer;
     
 }
 .btn-dangky::before{
@@ -79,6 +81,7 @@
     display: block;
     transition: all ease-out .5s;
     background-color: rgba(255, 255, 255, .5);
+
 }
 .btn-dangky:hover::before{
     height: 0;
@@ -94,6 +97,7 @@
     display: block;
     transition: all ease-out .5s;
     background-color: rgba(255, 255, 255, .5);
+
 }
 .btn-dangky:hover::after{
     height: 0;
