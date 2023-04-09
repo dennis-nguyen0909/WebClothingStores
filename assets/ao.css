@@ -193,4 +193,6 @@ figcaption{
 #show_more_btn_1 {
     display: flex;
     justify-content: center;
+}.con{
+    padding: 10px 5px;
 }

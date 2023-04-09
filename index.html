@@ -133,18 +133,19 @@
                     <li><a href="#">Áo sơ mi</a></li>
                 </ul>
                 </li>
-                <li><a href="#">Quần
+                <li><a href="quan.html">Quần
                     <i class="fa-solid fa-angle-down"></i>
                 </a>
                     <ul class="sub-menu-3">
-                        <li><a href="#">Quần dài
-                    <i class="fa-solid fa-angle-down"></i>
-                        </a>
-                            <ul class="sub-menu-3-second">
-                                <li><a href="#">Quần jean</a></li>
-                                <li><a href="#">Quần kaki</a></li>
-                                <li><a href="#">Quần thể thao</a></li>
-                            </ul>
+                        <li>
+                            <a href="quandai.html">Quần dài
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                                <!-- <ul class="sub-menu-3-second">
+                                    <li><a href="#">Quần jean</a></li>
+                                    <li><a href="#">Quần kaki</a></li>
+                                    <li><a href="#">Quần thể thao</a></li>
+                                </ul> -->
                         </li>
                         <li><a href="#">Quần ngắn</a></li>
                     </ul>
@@ -623,13 +624,10 @@
                </div> 
                <div class="auth-form__form">
                    <div class="auth-form__group">
-                       <span class="auth-form__dangky">Bạn chưa có tài khoản?
-                           <button >
+                       <span class="auth-form__dangky">Bạn chưa có tài khoản?         
                            <a id='btnDangKy' href="#" class="auth-form__dangky--theA">Đăng ký</a>
-                        </button>   
-                       
-                   </span>
-                       <input type="text"id="email" class="auth-form__input" placeholder="Email"> </div>
+                        </span>
+                       <input type="text"id="loginEmail" class="auth-form__input" placeholder="Email"> </div>
                        <div class="auth-form__group">
                            <input type="password" id="passw"class="auth-form__input" placeholder="Password">
                        </div>
@@ -638,14 +636,15 @@
                         </div>
                        </div>
                        <div class="auth-form__aside">
-                       <p class="auth-form__policy">
-                           <input type="checkbox" value="None"  class="checkbox" name="check" />
-                           Ghi nhớ tài khoản
-                       </p>
+                            <p class="auth-form__policy">
+                                <input type="checkbox" value="None"  class="checkbox" name="check" />
+                                Ghi nhớ tài khoản
+                            </p>
                        </div>
+                       <div id="loginError" class="error-message">Sai mật khẩu hoặc email</div>
                        <div class="auth-form__controls">
                                <!-- <a href="#" class="quenmk">Quên mật khẩu?</a> -->
-                               <button class="btn-dangky btn--primary">ĐĂNG NHẬP</button>
+                               <button id='btnLoginSubmit' class="btn-dangky btn--primary">ĐĂNG NHẬP</button>
                        </div>
                    
                </div>
@@ -693,7 +692,16 @@
 
 
 
-</body>
 <script src="./assets/app.js"></script>
+<script src="./js/data/users.js"></script>
+<!-- Lấy thông tin -->
+<script src="./js/functions/dom.js"></script>
+<script src="./js/functions/validate-form.js"></script>
+<script src="./js/functions/storage.js"></script>
+<!-- Login -->
+<script src="./js/functions/authentication.js"></script>
+<script src="./js/functions/pages/home.js"></script>
+</body>
+
 
 </html>
