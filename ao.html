@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-   
-    <!-- CSS:MAIN -->
     <link rel="shortcut icon" href="./img/favicon.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="./font/fontawesome-free-6.3.0-web/css/all.min.css">
+    <!-- CSS:MAIN -->
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/formlogin.css">
@@ -23,47 +21,15 @@
     <link rel="stylesheet" href="./assets/css/map.css">
     <link rel="stylesheet" href="./assets/css/search.css">
     <link rel="stylesheet" href="./assets/css/formcart.css">
-    
-
+    <link rel="stylesheet" href="./assets/css/accout.css">
+    <link rel="stylesheet" href="./assets/ao.css">
     <title>LEVENTS®</title>
 </head>
 <body>
-    <div class="modal-search">
-        <div id='containerSearch'>
-    
-            <div class="search">
-                <div class="search-btn">
-                        <h1 class="search-btn-text">Levents®</h1>
-                </div>
-                <div class="search-btn">
-                    <div class="search-btn-timkiem">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <input  class="input-search-1" type="text" placeholder="Search..."/>   
-                    </div>
-                    <div class="search-btn-child">
-                        <h2> Cụm từ tìm kiếm phổ biến</h2>
-                        <div class="search-title">
-                            <a href="" class="search-title-child">Áo levents</a>
-                            <a href="" class="search-title-child">Quần dài</a>
-                            <a href="" class="search-title-child">Áo khoác</a>
-                        </div>
-    
-                    </div>
-                </div>
-                <div class="search-btn">
-                    <div class="search-btn-cancle">
-                        <button id="formCancle" class="btn-timkiem">Cancel</button>
-                    </div>
-                </div>
-        
-            </div>
-        </div>
-    </div>
-    <div class="modal-notice">
-        <div class="notice">
-            <p>Mua càng nhiều,Giảm càng sâu.<br>Lên đến 90.000đ</p>
-        </div>
-    </div>
+    <!-- HeaderFisrt -->
+    <!-- position :sticky 
+     -->
+
     <div class="headerFisrt">
         <div class="headerFirst-text">
             <div class="headerFirst-title">
@@ -111,7 +77,11 @@
             </div>
         </div>
     </div>
-   
+    <div class="modal-notice">
+        <div class="notice">
+            <p>Mua càng nhiều,Giảm càng sâu.<br>Lên đến 90.000đ</p>
+        </div>
+    </div>
 <!-- Header-nav -->
     <div class="header">
         <ul class="navigation">
@@ -124,7 +94,7 @@
              </a>
             <ul class="sub-menu">
                 <span class="pesuado"></span>
-                <li><a href="ao.html">Áo
+                <li><a href="#">Áo
                     <i class="fa-solid fa-angle-down"></i>
                 </a>
                 <ul class="sub-menu-2">
@@ -207,77 +177,27 @@
          </ul>                       
         </ul>
     </div>
-    
-        <div class="form-cart">
-            <div class="container-cart">
-                <div class="form-cart-child">
-                    <h1>Giỏ hàng</h1>
-                    <button id="closeCart">Đóng</button>
-                </div>
-            </div>
-            <div class="container-cart">
-                <div class="form-cart-child">
-                    <h4>Giỏ hàng rỗng</h4>
-                </div>
-            </div>
-            <div class="container-cart">
-                <div class="form-cart-child">
-                    <h4>Tạm tính</h4>
-                    <h4>0 vnd</h4>
-                </div>
-            </div>
-            <div class="container-cart">
-                <div class="form-cart-btn">
-                    <button class="btn-buy">Thanh Toán</button>
-                </div>
-            </div>
-            <div class="container-cart">
-                <div class="form-cart-child">
-                    <h4>Có thể bạn quan tâm</h4>
-                 
-                </div>
-                <div class="form-cart-img">
-                    <div class="form-cart-img-child">
-                        <img width="130px" height="130px" src="./img/aoxamP1.jpeg" alt="">
-                    </div>
-                    <div class="form-cart-img-child">
-                        <div class="form-cart-tiltle">
-                            <p>Levents® Aquarium Tee/ Black<br>380,000 vnđ</p>
-                            <button class=" btn-cart">Bộ sưu tập mới</button>
-                        </div>
+
+    <div class="product">
+        <div class="main">
+            <div class="bc">
+                <div class="con">
+                    <p>
+                        <a href="index.html">Trang chủ</a>
                         
-                    </div>
-                </div>
-                <div class="form-cart-img">
-                    <div class="form-cart-img-child">
-                        <img width="130px" height="130px" src="./img/aoxanh1.jpeg" alt="">
-                    </div>
-                    <div class="form-cart-img-child">
-                        <div class="form-cart-tiltle">
-                            <p>Levents® Aquarium Tee/ Black<br>380,000 vnđ</p>
-                            <button class=" btn-cart">Bộ sưu tập mới</button>
-                        </div>
-                    </div>
+                        /
+                        
+                        <a href="index.html">Cửa hàng</a>
+                        
+                        /
+                        
+                        <a class="a2">Áo</a>
+                    </p>
                 </div>
             </div>
-          
             
         </div>
-  
-   
-
-    <!-- BACKGROUND -->
-    <div class="back">
-        <img class="background" src="./img/1920x760-1920x988.png" alt="">
-        <div class="back-btn">
-            <button class=" btn btn-bosuutap">Bộ sưu tập mới</button>
-        </div>
-      </div>
-      <!-- SAN PHAM AO -->
-    <div class="product">
-        <h1 class="product-noibat">
-            SẢN PHẨM NỔI BẬT CỦA LEVENT
-        </h1>
+        
         <div class="product-shirt">
                 <div class="product-shirt-noibat">
                     <a class="product-shirt-a" href="">
@@ -413,130 +333,48 @@
                 </div> 
             </div>
     </div>
-    <div class="btn-more-1">
-        <button class="btn-1 ">Xem Thêm</button>
-    </div>   
-    <!-- SLIDER SHOW -->
-    <div class="slider">
-        <div class="slides">
-          <!--radio buttons start-->
-          <input type="radio" name="radio-btn" id="radio1">
-          <input type="radio" name="radio-btn" id="radio2">
-          <input type="radio" name="radio-btn" id="radio3">
-          <input type="radio" name="radio-btn" id="radio4">
-          <!--radio buttons end-->
-          <!--slide images start-->
-          <div class="slide first">
-            <img src="./img/slider1.png" alt="">
-          </div>
-          <div class="slide">
-            <img src="./img/slider2.jpeg" alt="">
-          </div>
-          <div class="slide">
-            <img src="./img/slider3.jpeg" alt="">
-          </div>
-          <div class="slide">
-            <img src="./img/slider4.jpeg" alt="">
-          </div>
-          <!--slide images end-->
-          <!--automatic navigation start-->
-          <div class="navigation-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
-            <div class="auto-btn4"></div>
-          </div>
-          <!--automatic navigation end-->
-        </div>
-        <!--manual navigation start-->
-        <div class="navigation-manual">
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
-          <label for="radio3" class="manual-btn"></label>
-          <label for="radio4" class="manual-btn"></label>
-        </div>
-        <!--manual navigation end-->
-    </div>
-    <!-- BO PHOI -->
-    <div class="clothing">
-        <h1 class="clothing-noibat">Bộ Phối Của Levent</h1>
-        <div class="clothing-shirt">
-            <div>
-                <div class="clothing-shirt-noibat">
-                    <a class="clothing-shirt-a" href="">
-                        <img class="clothing-shirt-1 "src="./img/bophoido2.png"alt="MatSau">
-                        <img class="clothing-shirt-2 " src="./img/bophoido1.png" alt="MatTruoc">
-                    </a>
-                </div>
-                <div class="clothing-shirt-price">
-                    <h1 class="clothing-shirt-title">LEVENTS® 3RD ANNIVERSARY TEE</h1>
-                    <span> <a href="#" class="clothing-shirt-title btn-click" >Xem bộ sưu tập</a></span>
-                </div>
-            </div>
-            <div>
-                <div class="clothing-shirt-noibat">
-                    <a class="clothing-shirt-a" href="">
-                        <img class="clothing-shirt-1 "src="./img/maunau2.png"alt="Matsau">
-                        <img class="clothing-shirt-2 " src="./img/maunau1.png" alt="MatTruoc">
-                    </a>
-                </div>
-                <div class="clothing-shirt-price">
-                    <h1 class="clothing-shirt-title">LEVENTS® 3RD ANNIVERSARY TEE</h1>
-                    <span> <a href="#" class="clothing-shirt-title btn-click" >Xem bộ sưu tập</a></span>
-                </div>
-            </div>
-            <div>
-                <div class="clothing-shirt-noibat">
-                    <a class="clothing-shirt-a" href="">
-                        <img class="clothing-shirt-1 "src="./img/bophoitrang2.png"alt="MatSau">
-                        <img class="clothing-shirt-2 " src="./img/bophoitrang1.png" alt="MatTruoc">
-                    </a>
-                </div>
-                <div class="clothing-shirt-price">
-                    <h1 class="clothing-shirt-title">LEVENTS® 3RD ANNIVERSARY TEE</h1>
-                    <span> <a href="#" class="clothing-shirt-title btn-click" >Xem bộ sưu tập</a></span>
-                </div>
-            </div>
-            <div>
-                <div class="clothing-shirt-noibat">
-                    <a class="clothing-shirt-a" href="">
-                        <img class="clothing-shirt-1 "src="./img/bophoimauxanh2.png"alt="MatSau">
-                        <img class="clothing-shirt-2 " src="./img/bophoimauxanh1.png" alt="MatTruoc">
-                    </a>
-                </div>
-                <div class="clothing-shirt-price">
-                    <h1 class="clothing-shirt-title">LEVENTS® 3RD ANNIVERSARY TEE</h1>
-                    <span> <a href="#" class="clothing-shirt-title btn-click" >Xem bộ sưu tập</a></span>
-                </div>
-            </div>
-            
-        </div>
+       
         
+        <div id="loading-animation" style="display:none;">
+            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftenor.com%2Fsearch%2Floading-gif-transparent-background-gifs&psig=AOvVaw1h0A2MKLVDoQuTEv8fDQFi&ust=1680786355104000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCOCj9J7nkv4CFQAAAAAdAAAAABAJ" alt="Loading..."/>
+        </div>
+        <button class="btn-form" id="show_more_btn" onclick="setTimeout(myFunction,500);">Read more</button>
+       
     </div>
 
-    <section>
-        <div class="map">
-            <div class="map-content">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4477879872834!2d106.66386531494177!3d10.776975262130133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f449e9d9bc9%3A0x303d1df7f8ed6194!2sLEVENTS!5e0!3m2!1svi!2s!4v1680846864926!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="map-content">
-                <h2>GỬI TIN NHẮN NGAY CHO LEVENTS<br>
-                    KHI BẠN CẦN HỖ TRỢ HOẶC CÓ THẮC MẮC NHÉ!</h2>
-               <input type="text" name="" id="text"class='input-name' placeholder="Họ và tên">
-                    <div class="input-info">
-                        <input type="text" name="" id="email"class='input-email' placeholder="Email">
-                        <input type="text" name="" id="phone"class='input-phone' placeholder="Số điện thoại">
-                    </div>
-                    <input type="text" name="" id="text"class='input-reminder' placeholder="Lời nhắc">
-                    <button class="input-send">Gửi đi</button>
-                                
+        <!-- Start: information about the product -->
+    <div class="show-more-information">
+        <div class="img-container frm__flex__center">
+            <img src="https://levents.asia/wp-content/uploads/2023/01/Desktop-A%CC%81o-1-1520x988.png" alt="">
+        </div>
+        <span id="dots_1"></span>
+        <span id="more_1">
+        <div class="m-content-product-category">
+            <div class="description">
+                <p>Những năm gần đây, xu hướng thời trang Streetwear ngày càng phát triển mạnh mẽ trên thị trường. Không phải tự nhiên mà phong cách này được nhiều bạn trẻ theo đuổi và yêu thích đến vậy. Nếu là tín đồ mê phong cách đường phố thì mời các bạn cùng 
+                <a href="index.html">Levents</a> khám phá tất tần tật những điều thú vị về style này, đặc biệt là áo Streetwear ở bài viết dưới đây nhé!</p> <br>
+                <h2><strong>Áo streetwear là gì?</strong> </h2>
+                <br>
+                <figure class="wp-block-image">
+                    <img src="/img/poster_2.png" alt="">
+                    <figcaption>
+                        <a href="index.html" target="_blank" rel="noreferrer noopener">LEVENTS STRIPE POLO/WHITE</a>
+                    </figcaption>
+                </figure>
+                <br>
+                <p>Phong cách <a href="#">Streetwear </a>là lối thời trang tự do, phóng khoáng, không giới hạn tư duy sáng tạo và đậm chất đường phố. Không giống những phong cách thời trang khác, phong cách này đặc biệt hơn hẳn khi thể hiện được cái tôi cá nhân và khí chất của những người trẻ tuổi</p> <br>
+                <p>Với lợi thế đa dạng mẫu mã, chất liệu, áo Streetwear dễ dàng mix match cùng những trang phục khác tạo nên style độc đáo.</p><br>
+                <p>Thật không ngoa khi nói rằng phong cách này hiện đang giữ vị thế vững chắc trong danh sách hạng mục “thời trang ưa chuộng” của thế hệ gen Z.</p><br>
 
 
-
-                    
             </div>
         </div>
-    </section>
+        </span>
+    </div>
+    <button class="btn-form" id="show_more_btn_1" onclick="myFunction_1()">Show More</button>
+        <!-- End: information about the product -->      
+
+    
     <!-- =================Form: Footer=================================== -->
     <footer >
         <div class="container-footer">
@@ -611,7 +449,37 @@
 
     </footer>
     <!-- =================Form :Search=================================== -->
-   
+    <div class="modal-search">
+        <div id='containerSearch'>
+
+            <div class="search">
+                <div class="search-btn">
+                        <h1 class="search-btn-text">Levents®</h1>
+                </div>
+                <div class="search-btn">
+                    <div class="search-btn-timkiem">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input  class="input-search-1" type="text" placeholder="Search..."/>   
+                    </div>
+                    <div class="search-btn-child">
+                        <h2> Cụm từ tìm kiếm phổ biến</h2>
+                        <div class="search-title">
+                            <a href="" class="search-title-child">Áo levents</a>
+                            <a href="" class="search-title-child">Quần dài</a>
+                            <a href="" class="search-title-child">Áo khoác</a>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="search-btn">
+                    <div class="search-btn-cancle">
+                        <button id="formCancle" class="btn-timkiem">Cancel</button>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    </div>
 <!-- ======================Form:Đăng nhập================================ -->
 <div id="modal" class="modal">
    <div class="modal__body">
@@ -690,8 +558,70 @@
        </div>
     </div>
 </div>
-
-
+<div class="form-cart">
+    <div class="container-cart">
+        <div class="form-cart-child">
+            <h1>Giỏ hàng</h1>
+            <button id="closeCart">Đóng</button>
+        </div>
+    </div>
+    <div class="container-cart">
+        <div class="form-cart-child">
+            <h4>Giỏ hàng rỗng</h4>
+        </div>
+    </div>
+    <div class="container-cart">
+        <div class="form-cart-child">
+            <h4>Tạm tính</h4>
+            <h4>0 vnd</h4>
+        </div>
+    </div>
+    <div class="container-cart">
+        <div class="form-cart-btn">
+            <button class="btn-buy">Thanh Toán</button>
+        </div>
+    </div>
+    <div class="container-cart">
+        <div class="form-cart-child">
+            <h4>Có thể bạn quan tâm</h4>
+         
+        </div>
+        <div class="form-cart-img">
+            <div class="form-cart-img-child">
+                <img width="130px" height="130px" src="./img/aoxamP1.jpeg" alt="">
+            </div>
+            <div class="form-cart-img-child">
+                <div class="form-cart-tiltle">
+                    <p>Levents® Aquarium Tee/ Black<br>380,000 vnđ</p>
+                    <button class=" btn-cart">Bộ sưu tập mới</button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="form-cart-img">
+            <div class="form-cart-img-child">
+                <img width="130px" height="130px" src="./img/aoxanh1.jpeg" alt="">
+            </div>
+            <div class="form-cart-img-child">
+                <div class="form-cart-tiltle">
+                    <p>Levents® Aquarium Tee/ Black<br>380,000 vnđ</p>
+                    <button class=" btn-cart">Bộ sưu tập mới</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    
+</div>
+<div class="modal-notice">
+    <div class="notice">
+        <p>Mua càng nhiều,Giảm càng sâu.<br>Lên đến 90.000đ</p>
+    </div>
+</div><div class="modal-notice">
+    <div class="notice">
+        <p>Mua càng nhiều,Giảm càng sâu.<br>Lên đến 90.000đ</p>
+    </div>
+</div>
 
 </body>
 <script src="./assets/app.js"></script>

@@ -79,6 +79,25 @@ formCancle.addEventListener('click',function(){
 // });
 
 
+const formCart=document.querySelector('.form-cart');
+console.log(formCart);
+const iconCart=document.getElementById('iconCart');
+console.log(iconCart);
+iconCart.addEventListener('click',function(){
+    formCart.style.display="block";
+
+});
+const closeCart=document.getElementById("closeCart");
+closeCart.addEventListener('click',function(){
+    formCart.style.display="none";
+})
+// ===============================
+
+const headerNotice=document.querySelector(".header-notice");
+const Notice=document.querySelector(".notice");
+headerNotice.addEventListener('click',function(){
+    Notice.style.display="block";
+})
 
 
 

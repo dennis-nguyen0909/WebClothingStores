@@ -16,6 +16,7 @@
     visibility: hidden;
     transition: linear 0.25s;
     box-shadow: 1px 1px 4px rgba(0, 0,0, 0.3);
+    z-index: 10;
 }
 .navigation .sub-menu  .sub-menu-2 li a{
     line-height: 20px;
@@ -38,6 +39,7 @@
     visibility: hidden;
     opacity: 0;
     box-shadow: 1px 1px 1px rgba(0, 0,0, 0.3);
+    z-index: 10;
 }
 .sub-menu-3{
     padding: 10px 0;
@@ -51,6 +53,7 @@
     visibility: hidden;
     opacity: 0;
     box-shadow: 1px 1px 1px rgba(0, 0,0, 0.3);
+    z-index: 10;
 }
 .sub-menu :hover .sub-menu-3{
     visibility:visible;
@@ -69,6 +72,7 @@
     visibility: hidden;
     opacity: 0;
     box-shadow: 1px 1px 1px rgba(0, 0,0, 0.3);
+    z-index: 10;
 }
 .sub-menu-3:hover .sub-menu-3-second{
     visibility:visible;
@@ -86,7 +90,7 @@
     visibility: hidden;
     opacity: 0;
     box-shadow: 1px 1px 1px rgba(0, 0,0, 0.3);
-
+z-index: 10;
 }
 .sub-menu :hover .sub-menu-4{
 
@@ -107,6 +111,7 @@
     visibility: hidden;
     opacity: 0;
     box-shadow: 1px 1px 1px rgba(0, 0,0, 0.3);
+    z-index: 10;
 
 }
 
@@ -130,6 +135,7 @@
     visibility: hidden;
     transition: linear 0.25s;
     box-shadow: 1px 1px 4px rgba(0, 0,0, 0.3);
+    z-index: 10;
 
 }
 

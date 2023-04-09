@@ -6,6 +6,8 @@
     font-family: "SVN-Futura light", sans-serif;;
 }
 .headerFisrt{
+    position: fixed;
+    z-index: 300;
     width: 100%;
     background-color: black;
     height: 40px;
@@ -35,6 +37,13 @@
     justify-content: space-between;
     align-items: center;
     
+}
+.headerTwo{
+    padding-top: 40px;
+}
+.headerTwo a{
+    text-decoration: none;
+    color: black;
 }
 .headerTwo-title{
     /* position: fixed; */
@@ -86,7 +95,56 @@
     padding: 0 16px;
     color: black;
 }
+.header-notice{
+    position: relative;
+    display: inline-block;
+    padding:0 8px;
+    cursor: pointer;
+}
+/* Thông báo cart */
+.header__cart-notice{
+    width: 15px;
+    height: 15px;
+    align-items: center;
+    position: absolute;
+    padding:2px 6px;
+    background-color: #474747;
+    color: var(--white-color);
+    font-size: 10px;
+    border-radius: 15px;
+    top: 6px;
+    right: 15px;
+}
+.header__cart-notice:hover .notice{
+    display: block;
+    cursor: pointer;
+}
+.notice{
+    top: 88px;
+    z-index: 10;
+    right: 335px;
+    position:absolute;
+    width: 280px;
+    height: 65px;
+    background-color: #474747;
+    color: white;
+    font-weight: 300;
+    padding: 10px;
+    border-radius: 5px;
+    animation: fadeIn 0.5s;
+    display: none;
+}
+.notice::before{
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: -30px;
+    border-width: 16px 23px;
+    border-style: solid;
+    border-color: transparent transparent #474747 transparent;
+    cursor: pointer;
 
+}
 @keyframes fade {
     0%{
         transform: scale(1);
@@ -113,3 +171,19 @@
 }
 
 
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes growth{
+    form{
+        transform: scale(var(--growth-from));
+    }
+    to{
+        transform: scale(var(--growth-to));
+    }
+}
