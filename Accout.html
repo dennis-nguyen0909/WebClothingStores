@@ -76,9 +76,10 @@
                 </div> <div class="auth-form__form__dangky">
                     <div class="auth-form__group">
                     
-                    <input type="text" name="" id="text"class='auth-form__input__dangky' placeholder="Họ và tên">
+                    <input type="text" name="" id="text"class='auth-form__input__dangky' placeholder="Họ và tên" onkeyup="checkForm()">
+                    <div id="result"></div>
                     <input type="text"id="email" class="auth-form__input__dangky" placeholder="Email"> 
-                    <input type="date" name="" id="" class="auth-form__input__dangky" placeholder="Ngày sinh">
+                    <input type="date" name="" id="birth" class="auth-form__input__dangky" placeholder="Ngày sinh">
                     <input type="text" name="" id="phone"class="auth-form__input__dangky" placeholder="Số điện thoại"> 
                     </div>
                         <div class="auth-form__group">
@@ -155,7 +156,6 @@
             <div class="headerTwo-title">
                 <a href="index.html">
                     <h1>Levent</h1>
-
                 </a>
                 <div class="headerTwo-text-one">
                     <button class="headerTwo-title-btn">
@@ -198,7 +198,7 @@
              </a>
             <ul class="sub-menu">
                 <span class="pesuado"></span>
-                <li><a href="ao.html">Áo
+                <li><a href="Shirts.html">Áo
                     <i class="fa-solid fa-angle-down"></i>
                 </a>
                 <ul class="sub-menu-2">
@@ -207,23 +207,24 @@
                     <li><a href="#">Áo sơ mi</a></li>
                 </ul>
                 </li>
-                <li><a href="#">Quần
+                <li><a href="PageHomePants.html">Quần
                     <i class="fa-solid fa-angle-down"></i>
                 </a>
                     <ul class="sub-menu-3">
-                        <li><a href="#">Quần dài
-                    <i class="fa-solid fa-angle-down"></i>
-                        </a>
-                            <ul class="sub-menu-3-second">
-                                <li><a href="#">Quần jean</a></li>
-                                <li><a href="#">Quần kaki</a></li>
-                                <li><a href="#">Quần thể thao</a></li>
-                            </ul>
+                        <li>
+                            <a href="PagePantsLong.html">Quần dài
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                                <!-- <ul class="sub-menu-3-second">
+                                    <li><a href="#">Quần jean</a></li>
+                                    <li><a href="#">Quần kaki</a></li>
+                                    <li><a href="#">Quần thể thao</a></li>
+                                </ul> -->
                         </li>
                         <li><a href="#">Quần ngắn</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Áo khoác
+                <li><a href="Jackets.html">Áo khoác
                     <i class="fa-solid fa-angle-down"></i>
                 </a>
                     <ul class="sub-menu-4">
@@ -251,7 +252,7 @@
             </ul>
         </li>
           
-            <li><a href="pageSale.html">Giảm giá</a>
+            <li><a href="PageSales.html">Giảm giá</a>
                 <div class="line-Under"></div>
             </li>
             <li><a href="#">Bộ sưu tập</a>
@@ -281,6 +282,7 @@
          </ul>                       
         </ul>
     </div>
+    
     <div class="form-cart">
         <div class="container-cart">
             <div class="form-cart-child">
@@ -383,20 +385,23 @@
         <div class="information-child">
             <div class="information-child-2">
                 <div class="information-child-form">
-                    <p>Họ và tên:</p>
-                    <p class="info-name">Minh Duy 
-                        <a>
+                    <p>Họ và tên:
+                        <input type="text" name="" id="text"class='auth-form__input__dangky' placeholder="Họ và tên">
+                    </p>
+                        <!-- <a>
                             <i class="icon-pencil fa-regular fa-pen-to-square"></i>
-                        </a>
+                        </a> -->
                     </p>
                 </div>
                 <div class="information-child-form">
                     <p>Email:</p>
-                    <p>duyxitrum000@gmail.com</p>
+                    <input type="text"id="email" class="auth-form__input__dangky" placeholder="Email"> 
+
                 </div>
                 <div class="information-child-form">
                     <p>Số điện thoại:</p>
-                    <p>0898151737</p>
+                    <input type="text" name="" id="phone"class="auth-form__input__dangky" placeholder="Số điện thoại"> 
+
                 </div>
                 <div class="information-child-form">
                     <p>Ngày sinh</p>
@@ -496,6 +501,7 @@
 
     </footer>
 <script src="./assets/app.js"></script>
+<script src="./js/functions/pages/home.js"></script>
     
 </body>
 </html>

@@ -5,3 +5,6 @@ if(token){
 else{
     alert('Bạn chưa đăng nhập');
 }
+
+// Áo khoác
+renderListProducts();

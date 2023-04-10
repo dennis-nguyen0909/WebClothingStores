@@ -140,3 +140,26 @@ cursor: text;
     height: 0;
     cursor: pointer;
 }
+#myUL{
+    list-style: none;
+    cursor: pointer;
+}
+#myUL li a{
+    display: block;
+}
+/* .search-btn-more{
+    position: relative;
+}
+.product-shirt-search{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+.product-shirt-3{
+    width: 100px;
+    height: 100px;
+}
+.search-btn-more{
+    overflow: hidden;
+} */
