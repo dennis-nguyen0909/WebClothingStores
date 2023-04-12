@@ -32,6 +32,7 @@ function renderListProducts() {
                 <div class="product-shirt-price">
                     <h1 class="product-shirt-title">${[products[i].productName]}</h1>
                     <p class="product-shirt-title ">${[products[i].price]}</p>
+                    <button>Thêm vào giỏ hàng</button>
                 </div>
             </div>
         `;
@@ -145,3 +146,20 @@ function renderListProductAccessory(){
     }
 
 }
+
+let list=document.querySelectorAll('.product-shirt');
+list.forEach(sanpham => {
+    sanpham.addEventListener('click',function(event){
+        if(event.target.classList.contains('add')){
+
+            var sanphamMoi=sanpham.cloneNode(true);
+            // let listcart=document.querySelectorAll('.cart');
+            // listcart.forEach(cart =>{
+            //     if(cart.get)
+            // })
+            document.querySelector('.listcart').appendChild(sanphamMoi);
+
+        }
+
+    })
+})

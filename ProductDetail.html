@@ -23,6 +23,10 @@
     <link rel="stylesheet" href="./assets/css/map.css">
     <link rel="stylesheet" href="./assets/css/search.css">
     <link rel="stylesheet" href="./assets/css/formcart.css">
+    <link rel="stylesheet" href="./assets/css/breadcrumb.css">
+    <link rel="stylesheet" href="./assets/css/productDetail.css">
+    <link rel="stylesheet" href="./assets/css/amount.css">
+    <link rel="stylesheet" href="./assets/css/order.css">
     
 
     <title>LEVENTS®</title>
@@ -84,7 +88,6 @@
             </div>
         </div>
     </div>
-    <!-- HeaderTwo -->
     <div class="headerTwo">
         <div class="headerTwo-text">     
             <div class="headerTwo-title">
@@ -119,8 +122,6 @@
             </div>
         </div>
     </div>
-   
-<!-- Header-nav -->
     <div class="header">
         <ul class="navigation">
             <li><a href="#">Về chúng tôi</a>
@@ -216,6 +217,149 @@
          </ul>                       
         </ul>
     </div>
+    <div class="breadcrumb">
+        <ul class="breadcrumb__list">
+            <li>
+                <a href="#">Treang chủ</a>
+            </li>
+            <li>
+                <a href="#">Cửa hàng</a>
+            </li>
+            <li>
+                <a href="#">LEVENTS® COLOR TEE</a>
+            </li>
+        </ul>
+    </div>
+    <div class="product-detail">
+        <div class="product-detail__avatar">
+            <img src="./img/ao1.jpeg" id="mainImage" alt="">
+        </div>
+        <div class="product-detail__summary">
+            <div class="summary__title">
+                LEVENTS® COLOR TEE
+            </div>
+            <div class="summary__price">
+                380,000 vnđ
+            </div>
+            <div class="product-detail__item">
+                <div class="text">Màu sắc:
+                    <span class="name-text">Black</span>
+                </div>
+                <div class="item__custom">
+                    <div class="item__custom__choose">
+                        <img src="/img/ao1.jpeg" onclick="changeImage('ao1')" id="ao1" alt="">
+                    </div>
+                    <div class="item__custom__choose">
+                        <img src="/img/aoxanh1.jpeg" onclick="changeImage('aoxanh1')" id="aoxanh1" alt="">
+                    </div>
+                    <div class="item__custom__choose">
+                        <img src="/img/aotrang1.jpeg" onclick="changeImage('aotrang1')" id="aotrang1" alt="">
+                    </div>
+                </div>
+
+                <div class="item__size">
+                    <div class="text">
+                        Size    
+                    </div>
+                    <div class="choose__size">
+                        <div class="size-audio highlight">
+                            SIZE1
+                        </div>
+                        <div class="size-audio">
+                            SIZE2
+                        </div>
+                        <div class="size-audio">
+                            SIZE3
+                        </div>
+                        <div class="size-audio">
+                            SIZE4
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-amount">
+                    <div class="text">Số lượng:</div>
+                    <div class="buy-amount">
+                        <button class="minus-btn" onclick="handleMinus()">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+                            </svg>
+                        </button>
+                        <input type="text" class="amount" id="amount" value="1">
+                        <button class="plus-btn" onclick="handlePlus()">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="oder">
+                    <button id="submit" class="btn-muahang add"type="submit">
+                        Thêm vào giỏ
+                    </button>
+                    <a href="#">
+                        <img class="sizelike" src="./img/product-khanh/heart.jpg" alt="">
+                    </a>
+                </div>   
+
+                <div class="intro price1">
+                    <!-- Thông tin -->
+                    <div class="intro__title" onclick="information()">
+                        <p>Thông tin</p>
+                        <img class="size18px" src="./img/product-khanh/more.png" alt="">
+                    </div>
+                    <div class="intro-text" id="information">
+                        <p>LEVENTS® COLOR TEE</p>
+                        <p>
+                            Sản phẩm: LÌ VEN ORIGINAL 2.0 – Phiên bản bề mặt vải có lông, khắc phục tình trạng bị nhăn của sản phẩm.
+                        </p>
+                        <ul>
+                            <li>
+                                Lì ven Original không lông được áp dụng cho toàn bộ sản phẩm áo thun màu đen
+                            </li>
+                            <li>
+                                Lì ven Original 2.0 có lông vẫn được áp dụng cho các áo thun màu khác
+                            </li></ul>
+                            <p>Kích cỡ: 1/2/3/4</p>
+                        </div>
+                    </div><div class="intro price1">
+                        <div class="intro__title" onclick="SizeChart()">
+                            <p>Bảng size</p>
+                            <img class="size18px" src="./img/product-khanh/more.png" alt="">
+                        </div>
+                        <div class="intro-text" id="Size-chart">
+                            <p>
+                                Sản phẩm được may theo thông số tiêu chuẩn tương đối của người Việt Nam. Nếu bạn đang cân nhắc giữa hai kích cỡ, nên chọn kích cỡ lớn hơn.
+                            </p>
+                            <p>
+                                Kích cỡ 1: Chiều cao từ 1m50 – 1m65, cân nặng trên 55kg
+                                <br>
+                                Kích cỡ 2: Chiều cao từ 1m65 – 1m72, cân nặng dưới 65kg
+                                <br>
+                                Kích cỡ 3: Chiều cao từ 1m70 – 1m77, cân nặng dưới 80kg
+                                <br>
+                                Kích cỡ 4: Chiều cao trên 1m72, cân nặng dưới 95kg.
+                            </p>
+                            <img src="./img/product-khanh/Over-Tee-2022.jpg" alt="">
+                        </div>
+                    </div>
+                        <!-- Quy định đổi trả -->
+                    <div class="intro price2">
+                        <div class="intro__title" onclick="returnPolicy()">
+                            <p>Quy định đổi trả</p>
+                            <img class="size18px" src="./img/product-khanh/more.png" alt="">
+                        </div>
+                        <div class="intro-text" id="return-policy">
+                            <p>
+                                Nhằm mang lại cho bạn sự tiện lợi và những trải nghiệm tuyệt vời khi mua hàng, tụi mình đã phát triển dịch vụ đổi hàng tận nơi và chính sách bảo hành.
+                            </p>
+                            <p>
+                                Tham khảo thêm thông tin về chính sách<a href="#">tại đây</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
     
         <div class="form-cart">
             <div class="container-cart">
@@ -228,9 +372,9 @@
                 <div class="form-cart-child">
                     <h4>Giỏ hàng rỗng</h4>
                 </div>
+                <div class="listcart"></div>
             </div>
-            <div class="listcart"></div>
-            <!-- <div class="container-cart">
+            <div class="container-cart">
                 <div class="form-cart-child">
                     <h4>Tạm tính</h4>
                     <h4>0 vnd</h4>
@@ -269,156 +413,77 @@
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
           
             
         </div>
-  
-   
-
-    <!-- BACKGROUND -->
-    <div class="back">
-        <img class="background" src="./img/1920x760-1920x988.png" alt="">
-        <div class="back-btn">
-            <button class=" btn btn-bosuutap">Bộ sưu tập mới</button>
+    </div>
+    <section class="product-relative">
+        <div class="product-relative-title">
+            <h2>CÓ THỂ BẠN SẼ THÍCH</h2>
         </div>
-      </div>
-      <!-- SAN PHAM AO -->
-    <div class="product">
-        <h1 class="product-noibat">
-            SẢN PHẨM NỔI BẬT CỦA LEVENT
-        </h1>
-        <div id="list-product-index" class="product-shirt">
-                <div class="product-shirt-noibat item">
-                    <a class="product-shirt-a" href="ProductDetail.html">
-                        <img class="product-shirt-1 "src="./img/ao2.jpeg" alt="MatSau">
-                        <img class="product-shirt-2 "src="./img/ao1.jpeg" alt="MatTruoc">
-                    </a>
-                    <div class="product-shirt-price">
-                        <h1 class="product-shirt-title">LEVENTS® COLOR TEE/ BLACK</h1>
-                        <p class="product-shirt-title ">380,000 vnđ</p>
-                        <input type="number " class="count" min="1" value="1">
-                        <button class="add">Thêm vào giỏ hàng</button>
-                    </div>
-                </div>        
-        </div>
-        <div id="list-product-index" class="product-shirt">
-            <div class="product-shirt-noibat item">
-                <a class="product-shirt-a" href="ProductDetail.html">
-                    <img class="product-shirt-1 "src="./img/ao2.jpeg" alt="MatSau">
-                    <img class="product-shirt-2 "src="./img/ao1.jpeg" alt="MatTruoc">
-                </a>
-                <div class="product-shirt-price">
-                    <h1 class="product-shirt-title">LEVENTS® COLOR TEE/ BLACK</h1>
-                    <p class="product-shirt-title ">380,000 vnđ</p>
-                    <input type="number " class="count" min="1" value="1">
-                    <button class="add">Thêm vào giỏ hàng</button>
-                </div>
+        <div class="product-relative-uathich">
+            <div class="product-relative-list">
+                <a href="#"><img src="./img/aotrangK1.jpeg" alt=""></a>
+                <p>LEVENTS® 1 MILLION TEE/ WHITE</p>
+                <p>333.000 vnđ</p>
             </div>
-            
+            <div class="product-relative-list">
+                <a href="#"><img src="./img/aotrangP1.jpeg" alt=""></a>
+                <p>LEVENTS® WASH TEE/ IVORY WHITE</p>
+                <p>390.000 vnđ</p>
+            </div>
+            <div class="product-relative-list">
+                <a href="#"><img src="./img/aotrangT1.jpeg" alt=""></a>
+                <p>LEVENTS® 3RD ANNIVERSARY TEE/ WHITE</p>
+                <p>333.000 vnđ</p>
+            </div>
+            <div class="product-relative-list">
+                <a href="#"><img src="./img/aotulip1.jpeg" alt=""></a>
+                <p>LEVENTS® 2LIP TEE/ CREAM</p>
+                <p>390.000 vnđ</p>
+            </div>
+            <!-- <div class="product-relative-list">
+                <a href="#"><img src="./img/product-khanh/aopolo/polocream1.jpg" alt=""></a>
+                <p>LEVENTS® PEPPER SALT POLO/ GREY</p>
+                <p>380.000 vnđ</p>
+            </div>
+            <div class="product-relative-list">
+                <a href="#"><img src="./img/product-khanh/aopolo/pologray2.jpg" alt=""></a>
+                <p>LEVENTS® PEPPER SALT POLO/ CREAM</p>
+                <p>380.000 vnđ</p>
+            </div> -->
         </div>
     </div>
-    <div class="btn-more-1">
-        <button id ='xemthem'class="btn-1 ">Xem Thêm</button>
-    </div>   
-    <!-- SLIDER SHOW -->
-    <div class="slider">
-        <div class="slides">
-          <!--radio buttons start-->
-          <input type="radio" name="radio-btn" id="radio1">
-          <input type="radio" name="radio-btn" id="radio2">
-          <input type="radio" name="radio-btn" id="radio3">
-          <input type="radio" name="radio-btn" id="radio4">
-          <!--radio buttons end-->
-          <!--slide images start-->
-          <div class="slide first">
-            <img src="./img/slider1.png" alt="">
-          </div>
-          <div class="slide">
-            <img src="./img/slider2.jpeg" alt="">
-          </div>
-          <div class="slide">
-            <img src="./img/slider3.jpeg" alt="">
-          </div>
-          <div class="slide">
-            <img src="./img/slider4.jpeg" alt="">
-          </div>
-          <!--slide images end-->
-          <!--automatic navigation start-->
-          <div class="navigation-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
-            <div class="auto-btn4"></div>
-          </div>
-          <!--automatic navigation end-->
+    </section>
+    <section class="product-interest">
+        <div class="product-interest-title">
+            <h2>QUAN TÂM GẦN ĐÂY</h2>
         </div>
-        <!--manual navigation start-->
-        <div class="navigation-manual">
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
-          <label for="radio3" class="manual-btn"></label>
-          <label for="radio4" class="manual-btn"></label>
+        <div class="product-interest-quantam">
+            <div class="product-interest-list">
+                <a href="#"><img src="./img/aotrangK1.jpeg" alt=""></a>
+                <p>LEVENTS® 1 MILLION TEE/ WHITE</p>
+                <p>333.000 vnđ</p>
+            </div>
+            <div class="product-interest-list">
+                <a href="#"><img src="./img/aotrangP1.jpeg" alt=""></a>
+                <p>LEVENTS® WASH TEE/ IVORY WHITE</p>
+                <p>390.000 vnđ</p>
+            </div>
+            <div class="product-interest-list">
+                <a href="#"><img src="./img/aotrangT1.jpeg" alt=""></a>
+                <p>LEVENTS® 3RD ANNIVERSARY TEE/ WHITE</p>
+                <p>333.000 vnđ</p>
+            </div>
+            <div class="product-interest-list">
+                <a href="#"><img src="./img/aotulip1.jpeg" alt=""></a>
+                <p>LEVENTS® 2LIP TEE/ CREAM</p>
+                <p>390.000 vnđ</p>
+            </div>
         </div>
-        <!--manual navigation end-->
     </div>
-    <!-- BO PHOI -->
-    <div class="clothing">
-        <h1 class="clothing-noibat">Bộ Phối Của Levent</h1>
-        <div class="clothing-shirt">
-            <div>
-                <div class="clothing-shirt-noibat">
-                    <a class="clothing-shirt-a" href="">
-                        <img class="clothing-shirt-1 "src="./img/bophoido2.png"alt="MatSau">
-                        <img class="clothing-shirt-2 " src="./img/bophoido1.png" alt="MatTruoc">
-                    </a>
-                </div>
-                <div class="clothing-shirt-price">
-                    <h1 class="clothing-shirt-title">LEVENTS® 3RD ANNIVERSARY TEE</h1>
-                    <span> <a href="#" class="clothing-shirt-title btn-click" >Xem bộ sưu tập</a></span>
-                </div>
-            </div>
-            <div>
-                <div class="clothing-shirt-noibat">
-                    <a class="clothing-shirt-a" href="">
-                        <img class="clothing-shirt-1 "src="./img/maunau2.png"alt="Matsau">
-                        <img class="clothing-shirt-2 " src="./img/maunau1.png" alt="MatTruoc">
-                    </a>
-                </div>
-                <div class="clothing-shirt-price">
-                    <h1 class="clothing-shirt-title">LEVENTS® 3RD ANNIVERSARY TEE</h1>
-                    <span> <a href="#" class="clothing-shirt-title btn-click" >Xem bộ sưu tập</a></span>
-                </div>
-            </div>
-            <div>
-                <div class="clothing-shirt-noibat">
-                    <a class="clothing-shirt-a" href="">
-                        <img class="clothing-shirt-1 "src="./img/bophoitrang2.png"alt="MatSau">
-                        <img class="clothing-shirt-2 " src="./img/bophoitrang1.png" alt="MatTruoc">
-                    </a>
-                </div>
-                <div class="clothing-shirt-price">
-                    <h1 class="clothing-shirt-title">LEVENTS® 3RD ANNIVERSARY TEE</h1>
-                    <span> <a href="#" class="clothing-shirt-title btn-click" >Xem bộ sưu tập</a></span>
-                </div>
-            </div>
-            <div>
-                <div class="clothing-shirt-noibat">
-                    <a class="clothing-shirt-a" href="">
-                        <img class="clothing-shirt-1 "src="./img/bophoimauxanh2.png"alt="MatSau">
-                        <img class="clothing-shirt-2 " src="./img/bophoimauxanh1.png" alt="MatTruoc">
-                    </a>
-                </div>
-                <div class="clothing-shirt-price">
-                    <h1 class="clothing-shirt-title">LEVENTS® 3RD ANNIVERSARY TEE</h1>
-                    <span> <a href="#" class="clothing-shirt-title btn-click" >Xem bộ sưu tập</a></span>
-                </div>
-            </div>
-            
-        </div>
-        
-    </div>
-
+    </section>
     <section>
         <div class="map">
             <div class="map-content">
@@ -515,95 +580,90 @@
         </div>
 
     </footer>
-    <!-- =================Form :Search=================================== -->
-   
-<!-- ======================Form:Đăng nhập================================ -->
-<div id="modal" class="modal">
-   <div class="modal__body">
-           <div id='containerForm' class="auth-form">
-               <div class="auth-form__container">
-                   <div class="auth-form__header">
-                   <span class="auth-form__switch-btn">Đăng Nhập</span>
-                   <button class="btnClose" id="btnCloseModal">x</button>
-               </div> 
-            <form onsubmit="Login()" action="">
-               <div class="auth-form__form">
-                   <div class="auth-form__group">
-                       <span class="auth-form__dangky">Bạn chưa có tài khoản?         
-                           <a id='btnDangKy' href="#" class="auth-form__dangky--theA">Đăng ký</a>
-                        </span>
-                       <input type="text" id="loginEmail" class="auth-form__input" placeholder="Email"> </div>
-                       <div class="auth-form__group">
-                        <div class="form__group--child">
-                            <input type="password" id="passw"class="auth-form__input" placeholder="Password">
-                            <div style="display: flex; align-items: center;" class="">
-                                <input onclick='togglePassword()' type='checkbox' id='checkbox'>
-                                <i class="check-pass fa-solid fa-eye"></i>
+    <div id="modal" class="modal">
+        <div class="modal__body">
+                <div id='containerForm' class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                        <span class="auth-form__switch-btn">Đăng Nhập</span>
+                        <button class="btnClose" id="btnCloseModal">x</button>
+                    </div> 
+                 <form onsubmit="Login()" action="">
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <span class="auth-form__dangky">Bạn chưa có tài khoản?         
+                                <a id='btnDangKy' href="#" class="auth-form__dangky--theA">Đăng ký</a>
+                             </span>
+                            <input type="text" id="loginEmail" class="auth-form__input" placeholder="Email"> </div>
+                            <div class="auth-form__group">
+                             <div class="form__group--child">
+                                 <input type="password" id="passw"class="auth-form__input" placeholder="Password">
+                                 <div style="display: flex; align-items: center;" class="">
+                                     <input onclick='togglePassword()' type='checkbox' id='checkbox'>
+                                     <i class="check-pass fa-solid fa-eye"></i>
+                                 </div>
+                             </div>
                             </div>
-                        </div>
-                       </div>
-                </div>
-                <div class="auth-form__aside">
-                            <p class="auth-form__policy">
-                                <input type="checkbox" value="None"  class="checkbox" name="check" />
-                                Ghi nhớ tài khoản
-                            </p>
-                </div>
-                <div id="loginError" class="error-message">Sai mật khẩu hoặc email</div>
-                <div class="auth-form__controls">
-                               <button onclick="checkForm()"id='btnLoginSubmit'class="btn-dangky btn--primary">ĐĂNG NHẬP</button>
-                </div>
-
-             </form>
-                   
-               </div>
-           </div>
-           
-   </div>
-</div>
-<!-- ======================Form:Đăng ký================================== -->
-<div id="modal-dangky-btn" class="modal-dangky">
-   <div class="modal__body">
-       <div id='containerFormDangKy' class="auth-form-dangky">
-           <div class="auth-form__container__dangky">
-               <div class="auth-form__header__dangky">
-               <span class="auth-form__switch-btn__dangky">TẠO TÀI KHOẢN</span>
-               <button id="btnCloseModalTwo">x</button>
-            </div> 
-    <form onsubmit="signUp()" action="">
-           <div class="auth-form__form__dangky">
-               <div class="auth-form__group">
-               <input type="text" name="" id="text"class='auth-form__input__dangky' placeholder="Họ và tên">
-               <input type="text"id="email" class="auth-form__input__dangky" placeholder="Email"> 
-               <!-- <input type="date" name="" id="birthday" class="auth-form__input__dangky" placeholder="Ngày sinh"> -->
-               <!-- <input type="number" name="" id="phone"class="auth-form__input__dangky" placeholder="Số điện thoại">  -->
-            </div>
-            <div class="auth-form__group">
-                 <input type="password" id="password1"class="auth-form__input__dangky" placeholder="Mật khẩu">
-            </div>
-            <div class="auth-form__group">
-                <input type="password" id="again-passw"class="auth-form__input__dangky" placeholder="Xác nhận mật khẩu">
-            </div>
-        </div>
-    
-            <div class="auth-form__aside-dangky">
-                <p class="auth-form__policy-dangky">
-                <input type="checkbox" value="None"  class="checkbox" name="check" >
-                Tôi đồng ý với các điều khoản và điều kiện, chính sách bảo mật và chính sách cookie  
-                </p>
-            </div>
-            <div class="auth-form__controls__dangky">           
-                <button onclick="addData()" id="btn-create-accout" class="btn-dangky btn--primary">TẠO</button>
-            </div>   
+                     </div>
+                     <div class="auth-form__aside">
+                                 <p class="auth-form__policy">
+                                     <input type="checkbox" value="None"  class="checkbox" name="check" />
+                                     Ghi nhớ tài khoản
+                                 </p>
+                     </div>
+                     <div id="loginError" class="error-message">Sai mật khẩu hoặc email</div>
+                     <div class="auth-form__controls">
+                                    <button onclick="checkForm()"id='btnLoginSubmit'class="btn-dangky btn--primary">ĐĂNG NHẬP</button>
+                     </div>
+     
+                  </form>
                         
+                    </div>
+                </div>
+                
         </div>
-       </div>
-    </form>
     </div>
-  
-</div>
-
-
+    <div id="modal-dangky-btn" class="modal-dangky">
+        <div class="modal__body">
+            <div id='containerFormDangKy' class="auth-form-dangky">
+                <div class="auth-form__container__dangky">
+                    <div class="auth-form__header__dangky">
+                    <span class="auth-form__switch-btn__dangky">TẠO TÀI KHOẢN</span>
+                    <button id="btnCloseModalTwo">x</button>
+                 </div> 
+         <form onsubmit="signUp()" action="">
+                <div class="auth-form__form__dangky">
+                    <div class="auth-form__group">
+                    <input type="text" name="" id="text"class='auth-form__input__dangky' placeholder="Họ và tên">
+                    <input type="text"id="email" class="auth-form__input__dangky" placeholder="Email"> 
+                    <!-- <input type="date" name="" id="birthday" class="auth-form__input__dangky" placeholder="Ngày sinh"> -->
+                    <!-- <input type="number" name="" id="phone"class="auth-form__input__dangky" placeholder="Số điện thoại">  -->
+                 </div>
+                 <div class="auth-form__group">
+                      <input type="password" id="password1"class="auth-form__input__dangky" placeholder="Mật khẩu">
+                 </div>
+                 <div class="auth-form__group">
+                     <input type="password" id="again-passw"class="auth-form__input__dangky" placeholder="Xác nhận mật khẩu">
+                 </div>
+             </div>
+         
+                 <div class="auth-form__aside-dangky">
+                     <p class="auth-form__policy-dangky">
+                     <input type="checkbox" value="None"  class="checkbox" name="check" >
+                     Tôi đồng ý với các điều khoản và điều kiện, chính sách bảo mật và chính sách cookie  
+                     </p>
+                 </div>
+                 <div class="auth-form__controls__dangky">           
+                     <button onclick="addData()" id="btn-create-accout" class="btn-dangky btn--primary">TẠO</button>
+                 </div>   
+                             
+             </div>
+            </div>
+         </form>
+         </div>
+       
+    </div>
+<script src="./js/functions/pages/CreateAccout.js"></script>
 <script src="./js/data/products.js"></script>
 <script src="./assets/app.js"></script>
 <script src="./js/data/users.js"></script>
@@ -621,6 +681,12 @@
 <script src="./js/functions/pages/mockdata.js"></script>
 <script src="./js/functions/pages/CreateAccout.js"></script>
 <script src="/js/functions/pages/togglePassword.js"></script>
+
+<script src="./js/functions/pages/productdetail.js"></script>
+<script src="./assets/js/functions/pages/amount.js"></script>
+<script src="./assets/js/functions/pages/itemcustom.js"></script>
+<script src="./assets/js/functions/pages/intro.js"></script>
+<script src="./js/functions/pages/AddToCart.js"></script>
 </body>
 
 

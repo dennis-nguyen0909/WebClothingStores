@@ -26,10 +26,6 @@
     <title>Quần Dài - Levents®</title>
 </head>
 <body>
-    <!-- HeaderFisrt -->
-    <!-- position :sticky 
-     -->
-
     <div class="headerFisrt">
         <div class="headerFirst-text">
             <div class="headerFirst-title">
@@ -42,7 +38,6 @@
             </div>
         </div>
     </div>
-    <!-- HeaderTwo -->
     <div class="headerTwo">
         <div class="headerTwo-text">     
             <div class="headerTwo-title">
@@ -77,8 +72,6 @@
             </div>
         </div>
     </div>
-   
-<!-- Header-nav -->
     <div class="header">
         <ul class="navigation">
             <li><a href="#">Về chúng tôi</a>
@@ -174,15 +167,11 @@
          </ul>                       
         </ul>
     </div>
-    
     <div class="modal-notice">
         <div class="notice">
             <p>Mua càng nhiều,Giảm càng sâu.<br>Lên đến 90.000đ</p>
         </div>
     </div>
-<!-- Header-nav -->
-    
-
     <div class="product">
             <div class="main">
                 <div class="bc">
@@ -216,21 +205,13 @@
                 </div>
         </div>
     </div>
-       
-        
-        <div id="loading-animation" style="display:none;">
-            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftenor.com%2Fsearch%2Floading-gif-transparent-background-gifs&psig=AOvVaw1h0A2MKLVDoQuTEv8fDQFi&ust=1680786355104000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCOCj9J7nkv4CFQAAAAAdAAAAABAJ" alt="Loading..."/>
-        </div>
-        <button class="btn-form" id="show_more_btn" onclick="setTimeout(myFunction,500);">Read more</button>
-        <div class="img-container frm__flex__center">
-            <img src="./img/quandai/backgroundQuandai2.png" alt="">
-        </div>
-  
-
-    
-
-    
-    <!-- =================Form: Footer=================================== -->
+    <div id="loading-animation" style="display:none;">
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftenor.com%2Fsearch%2Floading-gif-transparent-background-gifs&psig=AOvVaw1h0A2MKLVDoQuTEv8fDQFi&ust=1680786355104000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCOCj9J7nkv4CFQAAAAAdAAAAABAJ" alt="Loading..."/>
+    </div>
+    <button class="btn-form" id="show_more_btn" onclick="setTimeout(myFunction,500);">Read more</button>
+    <div class="img-container frm__flex__center">
+        <img src="./img/quandai/backgroundQuandai2.png" alt="">
+    </div>
     <footer >
         <div class="container-footer">
             <div class=" container-footer-base container-footer-title">
@@ -303,7 +284,6 @@
         </div>
 
     </footer>
-    <!-- =================Form :Search=================================== -->
     <div class="modal-search">
         <div id='containerSearch'>
 
@@ -335,85 +315,90 @@
             </div>
         </div>
     </div>
-<!-- ======================Form:Đăng nhập================================ -->
-<div id="modal" class="modal">
-   <div class="modal__body">
-           <div id='containerForm' class="auth-form">
-               <div class="auth-form__container">
-                   <div class="auth-form__header">
-                   <span class="auth-form__switch-btn">Đăng Nhập</span>
-                   <button class="btnClose" id="btnCloseModal">x</button>
-               </div> 
-               <div class="auth-form__form">
-                   <div class="auth-form__group">
-                       <span class="auth-form__dangky">Bạn chưa có tài khoản?
-                           <button >
-                           <a id='btnDangKy' href="#" class="auth-form__dangky--theA">Đăng ký</a>
-                        </button>   
-                       
-                   </span>
-                       <input type="text"id="email" class="auth-form__input" placeholder="Email"> </div>
-                       <div class="auth-form__group">
-                           <input type="password" id="passw"class="auth-form__input" placeholder="Password">
-                       </div>
-                       <div class="auth-form__group">
-                           <!-- <input type="text" id="again-passw"class="auth-form__input" placeholder="Nhập lại Password"> -->
+    <div id="modal" class="modal">
+    <div class="modal__body">
+            <div id='containerForm' class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                    <span class="auth-form__switch-btn">Đăng Nhập</span>
+                    <button class="btnClose" id="btnCloseModal">x</button>
+                </div> 
+             <form onsubmit="Login()" action="">
+                <div class="auth-form__form">
+                    <div class="auth-form__group">
+                        <span class="auth-form__dangky">Bạn chưa có tài khoản?         
+                            <a id='btnDangKy' href="#" class="auth-form__dangky--theA">Đăng ký</a>
+                         </span>
+                        <input type="text" id="loginEmail" class="auth-form__input" placeholder="Email"> </div>
+                        <div class="auth-form__group">
+                         <div class="form__group--child">
+                             <input type="password" id="passw"class="auth-form__input" placeholder="Password">
+                             <div style="display: flex; align-items: center;" class="">
+                                 <input onclick='togglePassword()' type='checkbox' id='checkbox'>
+                                 <i class="check-pass fa-solid fa-eye"></i>
+                             </div>
+                         </div>
                         </div>
-                       </div>
-                       <div class="auth-form__aside">
-                       <p class="auth-form__policy">
-                           <input type="checkbox" value="None"  class="checkbox" name="check" />
-                           Ghi nhớ tài khoản
-                       </p>
-                       </div>
-                       <div class="auth-form__controls">
-                               <!-- <a href="#" class="quenmk">Quên mật khẩu?</a> -->
-                               <button class="btn-dangky btn--primary">ĐĂNG NHẬP</button>
-                       </div>
-                   
-               </div>
-           </div>
-   </div>
-</div>
-<!-- ======================Form:Đăng ký================================== -->
-<div id="modal-dangky-btn" class="modal-dangky">
-   <div class="modal__body">
-       <div id='containerFormDangKy' class="auth-form-dangky">
-           <div class="auth-form__container__dangky">
-               <div class="auth-form__header__dangky">
-       
-               <span class="auth-form__switch-btn__dangky">TẠO TÀI KHOẢN</span>
-               <button id="btnCloseModalTwo">x</button>
-
-           </div> <div class="auth-form__form__dangky">
-               <div class="auth-form__group">
-               
-               <input type="text" name="" id="text"class='auth-form__input__dangky' placeholder="Họ và tên">
-               <input type="text"id="email" class="auth-form__input__dangky" placeholder="Email"> 
-               <input type="date" name="" id="" class="auth-form__input__dangky" placeholder="Ngày sinh">
-               <input type="text" name="" id="phone"class="auth-form__input__dangky" placeholder="Số điện thoại"> 
-               </div>
-                   <div class="auth-form__group">
-                       <input type="password" id="passw"class="auth-form__input__dangky" placeholder="Mật khẩu">
-                   </div>
-                   <div class="auth-form__group">
-                       <input type="text" id="again-passw"class="auth-form__input__dangky" placeholder="Xác nhận mật khẩu">
-                       </div>
-                   </div>
-                   <div class="auth-form__aside-dangky">
-                   <p class="auth-form__policy-dangky">
-                       <input type="checkbox" value="None"  class="checkbox" name="check" >
-                       Tôi đồng ý với các điều khoản và điều kiện, chính sách bảo mật và chính sách cookie  
-                   </p>
-                   </div>
-                   <div class="auth-form__controls__dangky">           
-                           <button class="btn-dangky btn--primary">TẠO</button>
-                   </div>
-               </div>
-       </div>
+                 </div>
+                 <div class="auth-form__aside">
+                             <p class="auth-form__policy">
+                                 <input type="checkbox" value="None"  class="checkbox" name="check" />
+                                 Ghi nhớ tài khoản
+                             </p>
+                 </div>
+                 <div id="loginError" class="error-message">Sai mật khẩu hoặc email</div>
+                 <div class="auth-form__controls">
+                                <button onclick="checkForm()"id='btnLoginSubmit'class="btn-dangky btn--primary">ĐĂNG NHẬP</button>
+                 </div>
+ 
+              </form>
+                    
+                </div>
+            </div>
+            
     </div>
-</div>
-<div class="form-cart">
+    </div>
+    <div id="modal-dangky-btn" class="modal-dangky">
+    <div class="modal__body">
+        <div id='containerFormDangKy' class="auth-form-dangky">
+            <div class="auth-form__container__dangky">
+                <div class="auth-form__header__dangky">
+                <span class="auth-form__switch-btn__dangky">TẠO TÀI KHOẢN</span>
+                <button id="btnCloseModalTwo">x</button>
+             </div> 
+     <form onsubmit="signUp()" action="">
+            <div class="auth-form__form__dangky">
+                <div class="auth-form__group">
+                <input type="text" name="" id="text"class='auth-form__input__dangky' placeholder="Họ và tên">
+                <input type="text"id="email" class="auth-form__input__dangky" placeholder="Email"> 
+                <!-- <input type="date" name="" id="birthday" class="auth-form__input__dangky" placeholder="Ngày sinh"> -->
+                <!-- <input type="number" name="" id="phone"class="auth-form__input__dangky" placeholder="Số điện thoại">  -->
+             </div>
+             <div class="auth-form__group">
+                  <input type="password" id="password1"class="auth-form__input__dangky" placeholder="Mật khẩu">
+             </div>
+             <div class="auth-form__group">
+                 <input type="password" id="again-passw"class="auth-form__input__dangky" placeholder="Xác nhận mật khẩu">
+             </div>
+         </div>
+     
+             <div class="auth-form__aside-dangky">
+                 <p class="auth-form__policy-dangky">
+                 <input type="checkbox" value="None"  class="checkbox" name="check" >
+                 Tôi đồng ý với các điều khoản và điều kiện, chính sách bảo mật và chính sách cookie  
+                 </p>
+             </div>
+             <div class="auth-form__controls__dangky">           
+                 <button onclick="addData()" id="btn-create-accout" class="btn-dangky btn--primary">TẠO</button>
+             </div>   
+                         
+         </div>
+        </div>
+     </form>
+     </div>
+   
+    </div>
+    <div class="form-cart">
     <div class="container-cart">
         <div class="form-cart-child">
             <h1>Giỏ hàng</h1>
@@ -467,14 +452,14 @@
     </div>
   
     
-</div>
-<div class="modal-notice">
+    </div>
+    <div class="modal-notice">
     <div class="notice">
         <p>Mua càng nhiều,Giảm càng sâu.<br>Lên đến 90.000đ</p>
     </div>
-</div>
+    </div>
 
-
+<script src="./js/functions/pages/CreateAccout.js"></script>
 <script src="./js/data/products.js"></script>
 <script src="./assets/app.js"></script>
 <script src="./js/functions/storage.js"></script>

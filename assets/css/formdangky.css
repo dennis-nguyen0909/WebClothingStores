@@ -175,3 +175,10 @@
     cursor: pointer;
     opacity: 0.6;
 }
+.loi{
+    width: 400px;
+    padding: 6px;
+    border: 1px solid red;
+    background-color: yellow;
+    display: none;
+}

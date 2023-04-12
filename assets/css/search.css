@@ -6,6 +6,8 @@
     width: 100%;
     height: 350px;
     margin-top: 40px;
+    overflow: hidden;
+    /* scroll-behavior: smooth; */
 }
 .modal-search {
     position: fixed;
@@ -146,6 +148,13 @@ cursor: text;
 }
 #myUL li a{
     display: block;
+}
+.product-search{
+    width: 100px;
+    height: 100px;
+}
+#myUL {
+    overflow: hidden;
 }
 /* .search-btn-more{
     position: relative;

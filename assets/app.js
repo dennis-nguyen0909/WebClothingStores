@@ -1,4 +1,4 @@
-// =========================Form: Dang Nhao========================
+// =========================Form: Dang Nhap========================
 const btnCloseModalElm = document.getElementById('btnCloseModal');
 const formLoginElm = document.getElementById('formLogin');
 const modalElm = document.getElementById('modal');
@@ -49,8 +49,6 @@ setInterval(function(){
 // ==================FROM:SEARCH
 
 const modalSearch=document.querySelector('.modal-search');
-
-// const iconSearch=document.getElementById('icon-search');
 const formSearch = document.getElementById('iconSearch');
 
 
@@ -63,11 +61,8 @@ const formCancle=document.getElementById('formCancle');
 formCancle.addEventListener('click',function(){
     modalSearch.style.display='none';
 });
-// modalSearch.addEventListener('click',function(){
-// modalSearch.style.display='none';
-// });
 
-
+// 
 const formCart=document.querySelector('.form-cart');
 const iconCart=document.getElementById('iconCart');
 iconCart.addEventListener('click',function(){
@@ -86,7 +81,37 @@ headerNotice.addEventListener('click',function(){
     Notice.style.display="block";
 })
 
-
+function myFunction() {
+    let dots = document.getElementById("dots");
+    let moreText = document.getElementById("more");
+    let btnText = document.getElementById("show_more_btn");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "flex";
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "flex";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+      }
+    }
+    
+    function myFunction_1() {
+    let dots = document.getElementById("dots_1");
+    let moreText = document.getElementById("more_1");
+    let btnText = document.getElementById("show_more_btn_1");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "flex";
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "flex";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+      }
+    }
 
 
 // document.querySelector('#txtSearch').addEventListener('keypress', function (e) {

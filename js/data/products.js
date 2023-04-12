@@ -9,13 +9,13 @@ let products = [
         moreImage: ['', '', '', ''],
         alias: '',
         description: '',
-        amount: 0,
+        amount: 'ProductDetail.html',
         viewCount: 0,
         likeCount: 0
     },
     {
         productId: 2,
-        productName: 'Quần',
+        productName: 'Áo',
         price: '560,000vnd',
         avatar: './img/Aokhoac/aokhoacnau2.jpeg',
         avatar2:'./img/Aokhoac/aokhoacnau1.jpeg',
@@ -28,7 +28,7 @@ let products = [
     },
     {
         productId: 3,
-        productName: 'Quần',
+        productName: 'Phụ kiện',
         price: '560,000vnd',
         avatar: './img/Aokhoac/aokhoacxanh2.jpeg',
         avatar2:'./img/Aokhoac/aokhoacxanh1.jpeg',
@@ -92,8 +92,8 @@ let products = [
 let productSale=[
     {
         productIdSale: 1,
-        productName: 'Áo',
-        price: 'Sale con 280.000đ',
+        productName: 'LEVENTS SHIRT',
+        price: '480.000đ Giảm còn 280.000đ',
         avatar: './img/aotrang2.jpeg',
         avatar2:'./img/aotrang1.jpeg',
         moreImage: ['', '', '', ''],
@@ -105,8 +105,8 @@ let productSale=[
     },
     {
         productIdSale: 2,
-        productName: 'Áo',
-        price: 'Sale con 280.000đ',
+        productName: 'LEVENTS SHIRT',
+        price: '480.000đ Giảm còn 280.000đ',
         avatar: './img/aotrangK2.jpeg',
         avatar2:'./img/aotrangK1.jpeg',
         moreImage: ['', '', '', ''],
@@ -118,8 +118,8 @@ let productSale=[
     },
     {
         productIdSale: 3,
-        productName: 'Áo',
-        price: 'Sale con 280.000đ',
+        productName: 'LEVENTS SHIRT',
+        price: '480.000đ Giảm còn 280.000đ',
         avatar: './img/aotrangT2.jpeg',
         avatar2:'./img/aotrangT1.jpeg',
         moreImage: ['', '', '', ''],
@@ -131,8 +131,8 @@ let productSale=[
     },
     {
         productIdSale: 4,
-        productName: 'Áo',
-        price: 'Sale con 280.000đ',
+        productName: 'LEVENTS SHIRT',
+        price: '480.000đ Giảm còn 280.000đ',
         avatar: './img/aotulip2.jpeg',
         avatar2:'./img/aotulip1.jpeg',
         moreImage: ['', '', '', ''],
@@ -468,6 +468,7 @@ let productIndex=[
     
 
 ]
+// LIST PHỤ KIỆN
 let productAccessory=[
     {
         productIdAccessory: 1,

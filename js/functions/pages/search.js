@@ -1,1 +1,0 @@
-const inputSearch=document.querySelector('.modal-search');

@@ -1,15 +1,26 @@
 .accout{
     width: 100%;
-    height: 300px;
+    height: 400px;
     display: flex;
+ 
 }
 .accout-child{
-    margin-top: 100px;
-    margin-left: 20px;
+    margin-top: 20px;
+    margin-left: 60px;    
+}
+#form-info{ 
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    background-color:rgb(206,65,65);
+    box-shadow: 2px 2px 16px 8px #ccc;
 }
 .accout-child img{
-    width: 90px;
-    height: 90px;
+    width: 130px;
+    height: 130px;
     border-radius: 100%;
 }
 .accout-base{
@@ -38,10 +49,11 @@
 }
 .information-child{
     border-top: 1px solid #ccc;
+    margin: 0 70px;
 }
 .information-child-1 p{
     font-family:SVN-Futura light;
-line-height:24px;
+    line-height:24px;
     padding: 20px 0;
     width: 180px;
     font-weight: bold;
@@ -74,14 +86,11 @@ line-height:24px;
     text-decoration: none;
     color: var(--black-color);
     font-weight: bold;
-
-    /* color: rgb(161,161,161); */
 }
 .information-child-1 a:hover{
     opacity: 0.2;
-   
-    /* animation: bold 0.1s ease; */
 }
+
 @keyframes bold {
     from{
         color: 0;
@@ -144,4 +153,62 @@ line-height:24px;
     outline: none;
     border-left: hidden;
     border-right: hidden;
+}
+.label-acc{
+    width: 750px;
+    border-radius: 10px;
+    height:350px;
+    left: 610px;
+    background-color:rgb(206,65,65);
+    box-shadow: 2px 2px 16px 8px #ccc;
+    /* display: flex; */
+    padding: 50px 10px;
+    position: absolute;
+    /* right: 153px; */
+    font-size: 20px;
+    margin-top: 20px;
+}
+.table{
+    font-size: 16px;
+    width: 700px;
+    border:1px solid #333;
+}
+.info-my{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    
+    padding: 16px 0;
+}
+.showavt{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    justify-content: center;
+}
+.labal-img{
+    display: block;
+    width: 200px;
+    background-color: RGBA( 211, 211, 211, 1 );
+    padding: 12px;
+    color: #fff;
+    margin: 0px 20px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+#input-file{
+    display: none;
+}
+.btn-submit{
+    right: 295px;
+    justify-content: center;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    margin-top: 16px ;
+    padding: 6px 50px;
+
 }
