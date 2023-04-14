@@ -19,3 +19,33 @@ function handleLogin(email, password) {
 function handleLogout() {
     // Xóa toàn bộ thông tin của user ở localStorage. Chuyển hướng user về trang chủ
 }
+
+function validateEmail(email) {
+    var re = /\S+@\S+\.\S+/;
+    return re.test(email);
+  }
+  
+  function validatePassword(password) {
+    // Kiểm tra độ dài mật khẩu phải lớn hơn hoặc bằng 8 ký tự
+    if (password.length < 8) {
+      return false;
+    }
+  
+    // Kiểm tra mật khẩu phải chứa ít nhất một chữ cái viết hoa
+    if (!/[A-Z]/.test(password)) {
+      return false;
+    }
+  
+    // Kiểm tra mật khẩu phải chứa ít nhất một chữ cái viết thường
+    if (!/[a-z]/.test(password)) {
+      return false;
+    }
+  
+    // Kiểm tra mật khẩu phải chứa ít nhất một số
+    if (!/\d/.test(password)) {
+      return false;
+    }
+  
+    return true;
+  }
+  

@@ -44,19 +44,41 @@
 .information-child-1 p{
     font-family:SVN-Futura light;
     line-height:24px;
-    padding: 20px 0;
     width: 180px;
     font-weight: bold;
     font-size: 20px;
     display: flex;
+    padding: 10px 0;
 
+}
+.form-info{
+    overflow-y: scroll; /* Thêm thanh cuộn dọc */
+    max-height: 400px; /* Đặt giới hạn độ cao tối đa để hiển thị thanh cuộn */
+    background-color: #CCC;
+    position: absolute;
+}
+.form-info button {
+    display: block;
+    margin-bottom: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  } 
+.form-info button:hover {
+    background-color: black;
+    color: #fff;
 }
 .icon-pencil{
     position: absolute;
     right:7px;
     bottom: 2px;
     color: var(--black-color);
-    
 }
 .information-child-1 a{
     text-decoration: none;
@@ -66,31 +88,64 @@
 .information-child-1 a:hover{
     opacity: 0.2;
 }
-/* .information{
-    padding: 0 20px;
-    width: 100%;   
+.information-child-1{
+position: relative; 
+margin-right: 200px;
 }
-.information-child{
-    border-top: 1px solid #ccc;
-    margin: 0 70px;
-}
-.information-child-2{
-    width: 1000px;
-}
-.information-child-form  :nth-child(2){
-    border-bottom: 1px solid #ccc;
-}
-.information-child-2 p{
-    font-family:SVN-Futura light;
-line-height:24px;
-    padding: 10px 0;
-}
-.info-name{
-    position: relative;
+#form-ttcn {
+  display: none;
 }
 
-*/
-
+#form-donhang{
+  display: none;
+}
+.form-content.show {
+    display: block;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+/* Đơn hàng */
+/* Định dạng phần tựa đề */
+#order-history-form h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Định dạng bảng */
+  #order-history-form table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Định dạng tiêu đề bảng */
+  #order-history-form th {
+    background-color: #f1f1f1;
+    text-align: left;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  /* Định dạng dòng chẵn */
+  #order-history-form tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Định dạng dòng lẻ */
+  #order-history-form tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  
+  /* Định dạng ô */
+  #order-history-form td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  #order-history-form td:nth-child(4) {
+    font-weight: bold;
+  }
 @keyframes bold {
     from{
         color: 0;
@@ -233,4 +288,70 @@ line-height:24px;
 .labal-img:hover{
     cursor: pointer;
     background-color: #ccc;
+}
+
+/* ====================== */
+.voucher-list {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+  
+  h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  #new-voucher-input {
+    padding: 5px;
+    margin-right: 5px;
+  }
+  
+  #add-voucher-btn {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #add-voucher-btn:hover {
+    background-color: #3e8e41;
+  }
+ /* Đăng xuất */
+ .logout-message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  background-color: #33cc33;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  z-index: 9999;
+}
+
+.error-message {
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }

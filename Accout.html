@@ -271,67 +271,121 @@
             <img id="profile-pic" src="./img/avt.png" alt="">
              <div>
                 <div id="info-container"></div>
-                <button id="btn-view-info">Xem thông tin</button>               
+                <button id="btn-view-info" onclick="showInfo()">Xem thông tin</button>
+     
               </div>
                 <label class="labal-img" for="input-file">Cập nhật avatar</label>
                 <input id="input-file"type="file" accept="image/jpeg,image/png,image/jpg">
         </div>
         <div class="information-child-1">
-            <a href="">
-                <p>Thông tin cá nhân</p>
-            </a>
-            <a href="">                  
-                <p>Sổ địa chỉ</p>
-            </a>
-            <a href="">               
-                <p>Đơn hàng của tôi</p>
-            </a>
-            <a href="">
-                <p>Hạng thành viên</p>
-            </a>
-            <a href="">     
-                <p>Đổi thưởng</p>
-            </a>
-            <a href="">    
-                <p>Voucher của tôi</p>
-            </a>
-            <a href="">
-                <p>Sản phẩm yêu thích</p>
-            </a>
-            <a href="">
-                <p>Đăng xuất</p>
-            </a>
-    </div>
-    </div>
-    <div class="information">
-        <div class="information-child">
-            <!-- <div class="information-child-1">
-                    <a href="">
-                        <p>Thông tin cá nhân</p>
-                    </a>
-                    <a href="">                  
-                        <p>Sổ địa chỉ</p>
-                    </a>
-                    <a href="">               
-                        <p>Đơn hàng của tôi</p>
-                    </a>
-                    <a href="">
-                        <p>Hạng thành viên</p>
-                    </a>
-                    <a href="">     
-                        <p>Đổi thưởng</p>
-                    </a>
-                    <a href="">    
-                        <p>Voucher của tôi</p>
-                    </a>
-                    <a href="">
-                        <p>Sản phẩm yêu thích</p>
-                    </a>
-                    <a href="">
-                        <p>Đăng xuất</p>
-                    </a>
-            </div> -->
+            <div class="form-info">
+                <button id="btn-show-form">
+                    <p> Thông tin cá nhân</p>
+                </button>
+                <button onclick="showOrderForm()">
+                   <p>Xem đơn hàng</p> 
+                </button>
+                <button onclick="voucherForm()" id="toggle-voucher-btn"href="">    
+                    <p>Voucher của tôi</p>
+                </button>
+                <button id="btn-point" href="">     
+                    <p>Đổi thưởng</p>
+                </button>
+                <button href="">
+                    <p>Sản phẩm yêu thích</p>
+                </button>
+                <button onclick="DangXuat()" id="logout-1" href="">
+                    <p>Đăng xuất</p>
+                </button>
+            </div>
         </div>
+        <div id="form-ttcn" class="form-content">
+            <h2>Thông tin cá nhân</h2>
+            <form class="content">
+                <label for="name">Họ tên:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Số điện thoại:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="address">Địa chỉ:</label>
+                <textarea id="address" name="address" required></textarea>
+                <input type="submit" onclick="saveData()" value="Cập nhật" >
+            </form>
+        </div>
+        <div id="form-donhang"> 
+            <div class="form-content1" id="order-history-form">
+            <h2>Đơn hàng của tôi</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mã đơn hàng</th>
+                        <th>Ngày đặt hàng</th>
+                        <th>Tổng tiền</th>
+                        <th>Tình trạng đơn hàng</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ORD-001</td>
+                        <td>01/01/2023</td>
+                        <td>1,000,000 đ</td>
+                        <td>Đã giao hàng</td>
+                    </tr>
+                    <tr>
+                        <td>ORD-002</td>
+                        <td>02/01/2023</td>
+                        <td>2,000,000 đ</td>
+                        <td>Chưa giao hàng</td>
+                    </tr>
+                    <tr>
+                        <td>ORD-003</td>
+                        <td>03/01/2023</td>
+                        <td>3,000,000 đ</td>
+                        <td>Đang xử lý</td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+        </div>
+        <div id="voucher-list" class="voucher-list">
+            <h3>Danh sách voucher:</h3>
+            <ul>
+                <li>XADAWE1</li>
+                <li>S23WN1S</li>
+                <li>LEVENTS</li>
+            </ul>
+            <input type="text" id="new-voucher-input">
+            <button id="add-voucher-btn">Thêm Voucher</button>
+        </div>
+        <!-- <div class="form-content2" id="exchange-form">
+            <h2>Đổi thưởng</h2>
+            <form>
+              <label for="name">Họ và tên:</label>
+              <input type="text" id="name" name="name" required>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+              <label for="phone">Số điện thoại:</label>
+              <input type="tel" id="phone" name="phone" required>
+              <label for="product">Sản phẩm đổi thưởng:</label>
+              <select id="product" name="product">
+                <option value="product1">Sản phẩm 1</option>
+                <option value="product2">Sản phẩm 2</option>
+                <option value="product3">Sản phẩm 3</option>
+              </select>
+              <button type="submit">Đổi thưởng</button>
+            </form>
+          </div> -->
+        </div>
+
+
+            
+            
+            
+            
+            
+             
+    </div>
     </div>
     <footer >
         <div class="container-footer">

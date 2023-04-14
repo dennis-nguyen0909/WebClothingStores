@@ -142,7 +142,7 @@ cursor: text;
     height: 0;
     cursor: pointer;
 }
-#myUL{
+/* #myUL{
     list-style: none;
     cursor: pointer;
 }
@@ -155,20 +155,15 @@ cursor: text;
 }
 #myUL {
     overflow: hidden;
-}
-/* .search-btn-more{
-    position: relative;
-}
-.product-shirt-search{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    display: none;
-}
-.product-shirt-3{
-    width: 100px;
-    height: 100px;
-}
-.search-btn-more{
-    overflow: hidden;
 } */
+#myUL {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+  
+#myUL li a {
+    display: block;
+    padding: 10px
+}
