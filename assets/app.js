@@ -96,8 +96,7 @@ function myFunction() {
         moreText.style.display = "none";
       }
     }
-    
-    function myFunction_1() {
+function myFunction_1() {
     let dots = document.getElementById("dots_1");
     let moreText = document.getElementById("more_1");
     let btnText = document.getElementById("show_more_btn_1");

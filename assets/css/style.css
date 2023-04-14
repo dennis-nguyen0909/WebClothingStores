@@ -14,6 +14,9 @@
     animation: scroll 0.35s ease-in;
 
 }
+.headerFirst{
+    position: relative;
+}
 .headerFirst-title p{
     color: white;
     font-weight: 10;
@@ -153,7 +156,66 @@ transform: translateY(-100%);
     border-color: transparent transparent #474747 transparent;
     cursor: pointer;
 
+}.form-logout button:nth-child(1){
+   margin: 10px 0;
 }
+.logout-user button{
+    color: black;
+    width: 100px;
+    background-color: #474747;
+    height: 30px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.acc-logout{
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 18px;
+}
+.close-logout button{
+    color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    margin-right:20px ;
+    background-color: #474747;
+    border-radius: 10px;
+}
+.close-logout button:hover{
+    opacity: 0.4;
+    color: white;
+}
+.form-logout{
+    right: 85px;
+    top: 47px;
+    z-index: 10;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    color: black;
+    font-weight: 300;
+    border-radius: 5px;
+    animation: fadeIn 0.5s;
+    box-shadow: 1px 1px 10px 5px #ccc;
+    padding: 16px 25px;
+    display: none;
+}
+.form-logout::before{
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: -30px;
+    border-width: 16px 23px;
+    border-style: solid;
+    border-color: transparent transparent white;
+    cursor: pointer;
+}
+.btn-hover{
+    position: relative;
+}
+
 
 @keyframes fade {
     0%{
@@ -179,8 +241,6 @@ transform: translateY(-100%);
     
     }
 }
-
-
 @keyframes fadeIn{
     from{
         opacity: 0;
