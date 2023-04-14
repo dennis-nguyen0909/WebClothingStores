@@ -2,9 +2,9 @@
 let profilePic=document.getElementById('profile-pic');
 let inputFile=document.getElementById('input-file');
 let upload=document.getElementById('upload');
-inputFile.onchange=function(){
-    profilePic.src=URL.createObjectURL(inputFile.files[0]);
-}
+// inputFile.onchange=function(){
+//     profilePic.src=URL.createObjectURL(inputFile.files[0]);
+// }
 // START:ẨN/HIỆN THÔNG TIN CÁ NHÂN
 const form = document.getElementById("form-ttcn");
 const btn = document.getElementById("btn-show-form");
@@ -15,7 +15,7 @@ function toggleForm() {
       form.style.display = "none";
     }
 }
-btn.addEventListener("click", toggleForm);
+// btn.addEventListener("click", toggleForm);
 // END:ẨN/HIỆN THÔNG TIN CÁ NHÂN
 // START:ẨN/HIỆN ĐƠN HÀNG
 function showOrderForm() {
