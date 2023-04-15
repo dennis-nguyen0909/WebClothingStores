@@ -28,21 +28,26 @@ function validateEmail(email) {
   function validatePassword(password) {
     // Kiểm tra độ dài mật khẩu phải lớn hơn hoặc bằng 8 ký tự
     if (password.length < 8) {
+      alert("Độ dài mật khẩu phải lớn hơn hoặc bằng 8");
       return false;
     }
   
     // Kiểm tra mật khẩu phải chứa ít nhất một chữ cái viết hoa
     if (!/[A-Z]/.test(password)) {
+      alert("Mật khẩu phải có ít nhất 1 chữ cái viết hoa");
+
       return false;
     }
   
     // Kiểm tra mật khẩu phải chứa ít nhất một chữ cái viết thường
     if (!/[a-z]/.test(password)) {
+      alert("Mật khẩu phải có ít nhất 1 chữ cái viết thường");
       return false;
     }
   
     // Kiểm tra mật khẩu phải chứa ít nhất một số
     if (!/\d/.test(password)) {
+      alert("Mật khẩu phải có ít nhất 1 số");
       return false;
     }
   

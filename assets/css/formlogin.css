@@ -3,7 +3,7 @@
     border-radius: 5px;
     overflow: hidden;/*làm cho khung ở dưới đc bo vào do thằng con lớn hơn với thằng cha*/ 
     margin: auto;
-    width: 500px;
+    width: 600px;
     margin-top: 200px;
     border:1px solid #ccc;
     position: relative;
@@ -12,7 +12,7 @@
 } 
 .auth-form__container{
     height: 410px;
-    padding:0 32px; 
+    padding:0 60px; 
     position: relative;
 } 
 .auth-form__header{ 

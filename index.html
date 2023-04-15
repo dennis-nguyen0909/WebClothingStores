@@ -285,8 +285,8 @@
                     <div class="product-shirt-price">
                         <h1 class="product-shirt-title">LEVENTS® COLOR TEE/ BLACK</h1>
                         <p class="product-shirt-title ">380,000 vnđ</p>
-                        <input type="number " class="count" min="1" value="1">
-                        <button class="add">Thêm vào giỏ hàng</button>
+                        <!-- <input type="number " class="count" min="1" value="1"> -->
+                        <!-- <button class="add">Thêm vào giỏ hàng</button> -->
                     </div>
                 </div>        
         </div>
@@ -299,8 +299,8 @@
                 <div class="product-shirt-price">
                     <h1 class="product-shirt-title">LEVENTS® COLOR TEE/ BLACK</h1>
                     <p class="product-shirt-title ">380,000 vnđ</p>
-                    <input type="number " class="count" min="1" value="1">
-                    <button class="add">Thêm vào giỏ hàng</button>
+                    <!-- <input type="number " class="count" min="1" value="1"> -->
+                    <!-- <button class="add">Thêm vào giỏ hàng</button> -->
                 </div>
             </div>
             
@@ -525,9 +525,10 @@
                         <div class="form__group--child">
                             <input type="password" id="passw"class="auth-form__input" placeholder="Password">
                             <div style="display: flex; align-items: center;" class="">
-                                <input onclick='togglePassword()' type='checkbox' id='checkbox'>
-                                <i class="check-pass fa-solid fa-eye"></i>
+                                <input onclick='togglePassword()' type='checkbox' id='checkbox' style="display:none;">
+                                <label for='checkbox' style="cursor: pointer;"><i class="check-pass fa-solid fa-eye"></i></label>
                             </div>
+                            
                         </div>
                        </div>
                 </div>

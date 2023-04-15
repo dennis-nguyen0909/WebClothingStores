@@ -9,11 +9,11 @@ btnCloseModalElm.addEventListener('click', function() {
 formLoginElm.addEventListener('click', function() {
     modalElm.style.display = 'block';
 });
+containerFormElm.addEventListener('click', function(event) {
+  event.stopPropagation();
+});
 modalElm.addEventListener('click', function() {
     modalElm.style.display = 'none';
-});
-containerFormElm.addEventListener('click', function(event) {
-    event.stopPropagation();
 });
 // ========================Form:DANG KY========================
 const btnDangKy=document.querySelector('.auth-form__dangky--theA');

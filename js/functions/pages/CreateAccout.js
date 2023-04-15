@@ -2,18 +2,32 @@ function signUp(){
   var username=document.getElementById("nameSign").value;
   var email=document.getElementById("emailSign").value;
   var password=document.getElementById("passwordSign").value;
+  var passwordAgain=document.getElementById('again-passw').value;
 
   console.log({username, email, password});
-
+  if (username.trim() === '') {
+    alert("Vui lòng nhập tên của bạn");
+    return;
+  }
   // Kiểm tra tính hợp lệ của email và mật khẩu
   if (!validateEmail(email)) {
     alert("Email không hợp lệ");
     return;
   }
-
-  debugger
+  if(password.trim() === ''){
+    alert("Mật khẩu không được để trống")
+    return;
+  }
   if (!validatePassword(password)) {
-    alert("Mật khẩu không hợp lệ");
+    // alert("Mật khẩu không hợp lệ");
+    return;
+  }
+  if (passwordAgain.trim() === ''){
+    alert("Vui lòng xác nhận mật khẩu");
+    return;
+  }
+  if (password !== passwordAgain) {
+    alert("Mật khẩu nhập lại không khớp");
     return;
   }
 
@@ -21,13 +35,17 @@ function signUp(){
       username:username,
       email:email,
       password:password,
+      passwordAgain:passwordAgain,
   };
   var json =JSON.stringify(userLogin);
-  localStorage.setItem(username,json);
+  localStorage.setItem('userinfo',json);
   localStorage.setItem('name', username);
   localStorage.setItem('email', email);
   localStorage.setItem('password', password);
+  localStorage.setItem('passwordAgain', passwordAgain);
+
   alert("đăng ký thành công")
+  document.getElementById('modal-dangky-btn').style.display="none"
 }
 function Login() {
   var email = document.getElementById("loginEmail").value;
@@ -65,6 +83,21 @@ function Login() {
   
 }
 
+logAcc.addEventListener('click',function(){
+  if(formAcc.style.display='none'){
+  formAcc.style.display='block';
+  }else {
+    formAcc.style.display='none';
+  }
+})
+function showFormAcc() {
+  let formAcc=document.getElementById('form-accout');
+  if (formAcc.style.display === "none") {
+    formAcc.style.display = "block";
+  } else {
+    formAcc.style.display = "none";
+  }
+}
 
 
 // // ĐĂNG XUẤT

@@ -68,7 +68,19 @@
             </div>
             <div class="headerFirst-title">
                 <i class="fa-sharp fa-solid fa-bag-shopping"></i>
-                <button class="btn-hover">Tài khoản của tôi </button>
+                <button onclick="showFormAcc()"class="btn-hover">Tài khoản của tôi </button>
+                <div id="form-accout">
+                <div id="form-info" class="accout-child">
+                    <img id="profile-pic" src="./img/avt.png" alt="">
+                     <div>
+                        <div id="info-container"></div>
+                        <button id="btn-view-info" onclick="showInfo()">Xem thông tin</button>
+                        <button id="btn-hide-info" onclick="hideInfo()" style="display:none;">Ẩn thông tin</button>
+                      </div>
+                        <label class="labal-img" for="input-file">Cập nhật avatar</label>
+                        <input id="input-file"type="file" accept="image/jpeg,image/png,image/jpg">
+                    </div>
+                 </div>
                 <div class="form-logout">
                     <div class="acc-logout">Acccout</div>
                     <div class="close-logout">
@@ -267,39 +279,29 @@
         
     </div>
     <div class="accout">    
-        <div id="form-info" class="accout-child">
-            <img id="profile-pic" src="./img/avt.png" alt="">
-             <div>
-                <div id="info-container"></div>
-                <button id="btn-view-info" onclick="showInfo()">Xem thông tin</button>
-     
-              </div>
-                <label class="labal-img" for="input-file">Cập nhật avatar</label>
-                <input id="input-file"type="file" accept="image/jpeg,image/png,image/jpg">
-        </div>
         <div class="information-child-1">
             <div class="form-info">
-                <button id="btn-show-form">
-                    <p> Thông tin cá nhân</p>
+                <button id="btn-show-form" onclick="toggleForm()">
+                    <p > Thông tin cá nhân</p>
                 </button>
                 <button onclick="showOrderForm()">
                    <p>Xem đơn hàng</p> 
                 </button>
-                <button onclick="voucherForm()" id="toggle-voucher-btn"href="">    
+                <button onclick="voucherForm()" id="toggle-voucher-btn">    
                     <p>Voucher của tôi</p>
                 </button>
                 <button id="btn-point" href="">     
                     <p>Đổi thưởng</p>
                 </button>
-                <button href="">
+                <button onclick="showFavoriteProducts()">
                     <p>Sản phẩm yêu thích</p>
                 </button>
-                <button onclick="DangXuat()" id="logout-1" href="">
+                <button onclick="DangXuat()" id="logout-1">
                     <p>Đăng xuất</p>
                 </button>
             </div>
         </div>
-        <div id="form-ttcn" class="form-content">
+        <div class="form-content form-ttcn" style="display:none;">
             <h2>Thông tin cá nhân</h2>
             <form class="content">
                 <label for="name">Họ tên:</label>
@@ -313,7 +315,7 @@
                 <input type="submit" onclick="saveData()" value="Cập nhật" >
             </form>
         </div>
-        <div id="form-donhang"> 
+        <div class="form-donhang" style="display: none;"> 
             <div class="form-content1" id="order-history-form">
             <h2>Đơn hàng của tôi</h2>
             <table>
@@ -376,17 +378,135 @@
               <button type="submit">Đổi thưởng</button>
             </form>
           </div> -->
-        </div>
-
-
-            
-            
-            
-            
-            
-             
+         <div id="favorite-products">
+            <h3 class="title">Sản phẩm yêu thích</h3>
+            <ul class="product-list">
+              <li class="product-item">
+                <img src="/img/ao1.jpeg" alt="Áo Levents" width="200" height="200">
+                <div class="product-info">
+                  <h4 class="product-name">Áo Levents</h4>
+                  <p class="product-price">Giá: 500.000đ</p>
+                  <label for="size-1">Size:</label>
+                  <select name="size" id="size-1">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                  </select>
+                  <label for="quantity-1">Số lượng:</label>
+                  <input type="number" name="quantity" id="quantity-1" value="1" min="1" max="10">
+                  <button class="buy-btn" data-product="1">Thêm vào giỏ</button>
+                </div>
+              </li>
+              <!--Thêm các sản phẩm khác vào đây-->
+            </ul>
+            <ul class="product-list">
+                <li class="product-item">
+                  <img src="/img/Aokhoac/jacketden1.jpeg" alt="Áo Levents" width="200" height="200">
+                  <div class="product-info">
+                    <h4 class="product-name">Jackets Levents</h4>
+                    <p class="product-price">Giá: 800.000đ</p>
+                    <label for="size-1">Size:</label>
+                    <select name="size" id="size-1">
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                    </select>
+                    <label for="quantity-1">Số lượng:</label>
+                    <input type="number" name="quantity" id="quantity-1" value="1" min="1" max="10">
+                    <button class="buy-btn" data-product="1">Thêm vào giỏ</button>
+                  </div>
+                </li>
+                <!--Thêm các sản phẩm khác vào đây-->
+              </ul>  <ul class="product-list">
+                <li class="product-item">
+                  <img src="/img/aotulip1.jpeg" alt="Áo Levents" width="200" height="200">
+                  <div class="product-info">
+                    <h4 class="product-name">Áo Levents</h4>
+                    <p class="product-price">Giá: 300.000đ</p>
+                    <label for="size-1">Size:</label>
+                    <select name="size" id="size-1">
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                    </select>
+                    <label for="quantity-1">Số lượng:</label>
+                    <input type="number" name="quantity" id="quantity-1" value="1" min="1" max="10">
+                    <button class="buy-btn" data-product="1">Thêm vào giỏ</button>
+                  </div>
+                </li>
+                <!--Thêm các sản phẩm khác vào đây-->
+              </ul>  <ul class="product-list">
+                <li class="product-item">
+                  <img src="/img/Aokhoac/aokhoactrang1.jpeg" alt="Áo Levents" width="200" height="200">
+                  <div class="product-info">
+                    <h4 class="product-name">Hoodie Levents</h4>
+                    <p class="product-price">Giá: 750.000đ</p>
+                    <label for="size-1">Size:</label>
+                    <select name="size" id="size-1">
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                    </select>
+                    <label for="quantity-1">Số lượng:</label>
+                    <input type="number" name="quantity" id="quantity-1" value="1" min="1" max="10">
+                    <button class="buy-btn" data-product="1">Thêm vào giỏ</button>
+                  </div>
+                </li>
+                <!--Thêm các sản phẩm khác vào đây-->
+              </ul>  <ul class="product-list">
+                <li class="product-item">
+                  <img src="/img/quandai/jeanXanh1.jpeg" alt="Áo Levents" width="200" height="200">
+                  <div class="product-info">
+                    <h4 class="product-name">Jeans Levents</h4>
+                    <p class="product-price">Giá: 580.000đ</p>
+                    <label for="size-1">Size:</label>
+                    <select name="size" id="size-1">
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                    </select>
+                    <label for="quantity-1">Số lượng:</label>
+                    <input type="number" name="quantity" id="quantity-1" value="1" min="1" max="10">
+                    <button class="buy-btn" data-product="1">Thêm vào giỏ</button>
+                  </div>
+                </li>
+                <!--Thêm các sản phẩm khác vào đây-->
+              </ul>  <ul class="product-list">
+                <li class="product-item">
+                  <img src="/img/ao1.jpeg" alt="Áo Levents" width="200" height="200">
+                  <div class="product-info">
+                    <h4 class="product-name">Áo Levents</h4>
+                    <p class="product-price">Giá: 500.000đ</p>
+                    <label for="size-1">Size:</label>
+                    <select name="size" id="size-1">
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                    </select>
+                    <label for="quantity-1">Số lượng:</label>
+                    <input type="number" name="quantity" id="quantity-1" value="1" min="1" max="10">
+                    <button class="buy-btn" data-product="1">Thêm vào giỏ</button>
+                  </div>
+                </li>
+                <!--Thêm các sản phẩm khác vào đây-->
+              </ul>
+          
+            <div id="cart">
+              <h3>Giỏ hàng</h3>
+              <ul id="cart-items">
+              </ul>
+              <p id="cart-total">Tổng tiền: 0đ</p>
+            </div>
+          </div>
+          
     </div>
-    </div>
+        
     <footer >
         <div class="container-footer">
             <div class=" container-footer-base container-footer-title">
@@ -544,11 +664,13 @@
          </div>
        
      </div>
+<script src="./js/functions/pages/accout.js"></script>
+
 <script src="./js/functions/pages/CreateAccout.js"></script>
 <script src="./assets/app.js"></script>
 <script src="./js/functions/pages/home.js"></script>
 <script src="./js/functions/storage.js"></script>
-<script src="./js/functions/pages/accout.js"></script>
+
 
 </body>
 </html>
