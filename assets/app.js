@@ -35,22 +35,9 @@ containerFormDangKy.addEventListener("click", function (event) {
 modalDangKy.addEventListener("click", function () {
   modalDangKy.style.display = "none";
 });
-
-// SLIDER========================================
-var counter = 1;
-setInterval(function () {
-  document.getElementById("radio" + counter).checked = true;
-  counter++;
-  if (counter > 4) {
-    counter = 1;
-  }
-}, 3000);
-
 // ==================FROM:SEARCH
-
 const modalSearch = document.querySelector(".modal-search");
 const formSearch = document.getElementById("iconSearch");
-
 formSearch.addEventListener("click", function () {
   modalSearch.style.display = "block";
 });

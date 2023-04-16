@@ -56,13 +56,13 @@ footer {
 
 .footer-icon a {
   margin: 0 8px;
+  counter-reset: white;
 }
-.footer-icon a:hover {
+.footer-icon a :nth-child(1):hover {
   opacity: 0.8;
   cursor: pointer;
-  background-color: blue;
-  color: aliceblue;
   border-radius: 5px;
+  transform: scale(1.5);
 }
 .line--hover {
   animation: fade 0.5s;
