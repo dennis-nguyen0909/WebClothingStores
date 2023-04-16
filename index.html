@@ -68,7 +68,7 @@
             </div>
             <div class="headerFirst-title">
                 <i class="fa-sharp fa-solid fa-bag-shopping"></i>
-                <button>Mua ngay! </button>
+                <button onclick="DangXuat()" id="AccForMy">Mua ngay! </button>
             </div>
         </div>
     </div>
@@ -123,11 +123,11 @@
                 <li><a href="Shirts.html">Áo
                     <i class="fa-solid fa-angle-down"></i>
                 </a>
-                <!-- <ul class="sub-menu-2">
+                <ul class="sub-menu-2">
                     <li><a href="#">Áo thun</a></li>
                     <li><a href="#">Áo polo</a></li>
                     <li><a href="#">Áo sơ mi</a></li>
-                </ul> -->
+                </ul>
                 </li>
                 <li><a href="PageHomePants.html">Quần
                     <i class="fa-solid fa-angle-down"></i>
@@ -137,11 +137,11 @@
                             <a href="PagePantsLong.html">Quần dài
                                 <i class="fa-solid fa-angle-down"></i>
                             </a>
-                                <!-- <ul class="sub-menu-3-second">
+                                <ul class="sub-menu-3-second">
                                     <li><a href="#">Quần jean</a></li>
                                     <li><a href="#">Quần kaki</a></li>
                                     <li><a href="#">Quần thể thao</a></li>
-                                </ul> -->
+                                </ul>
                         </li>
                         <li><a href="#">Quần ngắn</a></li>
                     </ul>
@@ -149,12 +149,12 @@
                 <li><a href="Jackets.html">Áo khoác
                     <i class="fa-solid fa-angle-down"></i>
                 </a>
-                    <!-- <ul class="sub-menu-4">
+                    <ul class="sub-menu-4">
                         <li><a href="#">Cardigan</a></li>
                         <li><a href="#">Hoodie</a></li>
                         <li><a href="#">Sweater</a></li>
                         <li><a href="#">Jacket</a></li>
-                    </ul> -->
+                    </ul>
                 </li>
                 <li><a href="PageBalo.html">Balo</a>
                 </li>
@@ -162,13 +162,13 @@
                     <i class="fa-solid fa-angle-down"></i>
 
                 </a>
-                    <!-- <ul class="sub-menu-5">
+                    <ul class="sub-menu-5">
                         <li><a href="#">Nón</a></li>
                         <li><a href="#">Vớ</a></li>
                         <li><a href="#">Dép</a></li>
                         <li><a href="#">Túi xách</a></li>
                         <li><a href="#">Ví</a></li>
-                    </ul> -->
+                    </ul>
                 </li>
                 
             </ul>
@@ -177,13 +177,13 @@
             <li><a href="PageSales.html">Giảm giá</a>
                 <div class="line-Under"></div>
             </li>
-            <li><a href="#">Bộ sưu tập</a>
+            <li><a href="BoPhoi.html">Bộ sưu tập</a>
                 <div class="line-Under"></div>
             </li>
             <li> <a href="#">Bài viết </a>
                 <div class="line-Under"></div>
             </li>   
-            <li><a href="#">Liên hệ</a>
+            <li><a href="Contact.html">Liên hệ</a>
                 <div class="line-Under"></div>
             </li>
             <li><a href="#">Chăm sóc khách hàng
@@ -307,7 +307,7 @@
         </div>
     </div>
     <div class="btn-more-1">
-        <button id ='xemthem'class="btn-1 ">Xem Thêm</button>
+        <button id ='load-more-btn'class="btn-1 " onclick="loadMoreProducts()">Xem Thêm</button>
     </div>   
     <!-- SLIDER SHOW -->
     <div class="slider">
@@ -581,6 +581,7 @@
                 <input type="checkbox" value="None"  class="checkbox" name="check" >
                 Tôi đồng ý với các điều khoản và điều kiện, chính sách bảo mật và chính sách cookie  
                 </p>
+                <p id="alert-message"></p>
             </div>
             <div class="auth-form__controls__dangky">           
                 <button onclick="addData()" id="btn-create-accout" class="btn-dangky btn--primary">TẠO</button>

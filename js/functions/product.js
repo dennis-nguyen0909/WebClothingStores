@@ -127,6 +127,33 @@ function renderListProductIndex(){
     }
 
 }
+let start = 0;
+const limit = 8;
+
+function loadMoreProducts() {
+  const listProductIndex = document.getElementById('list-product-index');
+  const products = productIndex.slice(start, start + limit);
+
+  for (let i = 0; i < products.length; i++) {
+    listProductIndex.innerHTML += `
+      <div class="product-shirt-noibat">
+        <a class="product-shirt-a" href="">
+          <img class="product-shirt-1 "src="${products[i].avatar}" alt="MatSau">
+          <img class="product-shirt-2 "src="${products[i].avatar2}" alt="MatTruoc">
+        </a>
+        <div class="product-shirt-price">
+          <h1 class="product-shirt-title">${products[i].productName}</h1>
+          <p class="product-shirt-title">${products[i].price}</p>
+        </div>
+      </div>
+    `;
+  }
+
+  start += limit;
+}
+
+document.getElementById('load-more-btn').addEventListener('click', loadMoreProducts);
+
 function renderListProductAccessory(){
     const listProductAccessory=getElementById('list-product-accessory');
     for ( let i=0;i<productAccessory.length;i++){
