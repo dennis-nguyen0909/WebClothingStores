@@ -58,6 +58,7 @@ function signUp() {
     localStorage.setItem("password", password);
     localStorage.setItem("passwordAgain", passwordAgain);
     alert("Đăng ký thành công");
+
     document.getElementById("modal-dangky-btn").style.display = "none";
     document.getElementById("modal").style.display = "block";
 }
