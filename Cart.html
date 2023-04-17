@@ -5,24 +5,174 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
+
+    <link rel="shortcut icon" href="./img/favicon.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="./font/fontawesome-free-6.3.0-web/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/cart.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/formlogin.css">
-    <link rel="stylesheet" href="./assets/css/dropdown.css">
-    <link rel="stylesheet" href="./assets/css/product.css">
-    <link rel="stylesheet" href="./assets/css/formdangky.css">
-    <link rel="stylesheet" href="./assets/css/footer.css">
-    <link rel="stylesheet" href="./assets/css/map.css">
     <link rel="stylesheet" href="./assets/css/frm_global.css">
-    <link rel="stylesheet" href="/assets/css/search.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/dropdown.css">
+    <link rel="stylesheet" href="./assets/css/search.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/formdangky.css">
+    <link rel="stylesheet" href="./assets/css/formlogin.css">
+    <link rel="stylesheet" href="./assets/css/.css">
+    <link rel="stylesheet" href="./assets/css/formcart.css">
+
+
+
     <title>Thanh Toán - Levents®</title>
 </head>
 
 <body>
-    <!-- ======================Form:Search-Notice================================== -->
+
+    <!--=================Form:Header======================================== -->
+    <div class="headerFisrt">
+        <div class="headerFirst-text">
+            <div class="headerFirst-title">
+                <i class="fa-sharp fa-solid fa-globe"></i>
+                <p>Levents Love u </p>
+            </div>
+            <div class="headerFirst-title">
+                <i class="fa-sharp fa-solid fa-bag-shopping"></i>
+                <button onclick="DangXuat()" id="AccForMy">Mua ngay! </button>
+            </div>
+        </div>
+    </div>
+    <div class="headerTwo">
+        <div class="headerTwo-text">
+            <div class="headerTwo-title">
+                <a href="index.html">
+                    <h1>Levent</h1>
+                </a>
+                <div class="headerTwo-text-one">
+                    <button class="headerTwo-title-btn">
+                    <div class="header-notice">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="header__cart-notice">1</span>
+                    </div>
+                </button>
+                    <button class="headerTwo-title-btn">
+                    <p>Sản phẩm yêu thích</p>
+                </button>
+                    <button id='iconSearch' class="headerTwo-title-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                    <button id="iconCart" class="headerTwo-title-btn">
+                    <i class="fa-sharp fa-solid fa-bag-shopping"></i>
+                    
+                </button>
+                    <button id='formLogin' class="headerTwo-title-btn">
+                    <i  class="fa-solid fa-user"></i>
+                </button>
+                    <button class="headerTwo-title-btn">
+                    <!-- <i class="fa-solid fa-flag"></i> -->
+                    <div class="flag-vn">
+                        <img style="margin-right: 12px; " src="https://levents.asia/template/assets/images/svg/ic-vn.svg" alt="">
+                    </div>   
+                </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <ul class="navigation">
+            <li><a href="#">Về chúng tôi</a>
+                <div class="line-Under"></div>
+            </li>
+            <li><a href="#">Cửa hàng  
+            <i class="fa-solid fa-angle-down"></i>
+         <div class="line-Under"></div>
+         </a>
+                <ul class="sub-menu">
+                    <span class="pesuado"></span>
+                    <li><a href="Shirts.html">Áo
+                <i class="fa-solid fa-angle-down"></i>
+            </a>
+                        <ul class="sub-menu-2">
+                            <li><a href="#">Áo thun</a></li>
+                            <li><a href="#">Áo polo</a></li>
+                            <li><a href="#">Áo sơ mi</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="PageHomePants.html">Quần
+                <i class="fa-solid fa-angle-down"></i>
+            </a>
+                        <ul class="sub-menu-3">
+                            <li>
+                                <a href="PagePantsLong.html">Quần dài
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                                <ul class="sub-menu-3-second">
+                                    <li><a href="#">Quần jean</a></li>
+                                    <li><a href="#">Quần kaki</a></li>
+                                    <li><a href="#">Quần thể thao</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Quần ngắn</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Jackets.html">Áo khoác
+                <i class="fa-solid fa-angle-down"></i>
+            </a>
+                        <ul class="sub-menu-4">
+                            <li><a href="#">Cardigan</a></li>
+                            <li><a href="#">Hoodie</a></li>
+                            <li><a href="#">Sweater</a></li>
+                            <li><a href="#">Jacket</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="PageBalo.html">Balo</a>
+                    </li>
+                    <li><a href="Accessory.html">Phụ kiện
+                <i class="fa-solid fa-angle-down"></i>
+
+            </a>
+                        <ul class="sub-menu-5">
+                            <li><a href="#">Nón</a></li>
+                            <li><a href="#">Vớ</a></li>
+                            <li><a href="#">Dép</a></li>
+                            <li><a href="#">Túi xách</a></li>
+                            <li><a href="#">Ví</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li><a href="PageSales.html">Giảm giá</a>
+                <div class="line-Under"></div>
+            </li>
+            <li><a href="BoPhoi.html">Bộ sưu tập</a>
+                <div class="line-Under"></div>
+            </li>
+            <li> <a href="#">Bài viết </a>
+                <div class="line-Under"></div>
+            </li>
+            <li><a href="Contact.html">Liên hệ</a>
+                <div class="line-Under"></div>
+            </li>
+            <li><a href="#">Chăm sóc khách hàng
+            <i class="fa-solid fa-angle-down"></i>
+            <div class="line-Under"></div>
+        </a>
+                <ul class="sub-menu-cskh">
+                    <li><a href="#">Chính sách đổi trả & bảo hành </a>
+                        <li><a href="#">Chính sách vận chuyển </a>
+                            <li><a href="#">Hỏi & đáp</a>
+                                <li><a href="#">Hướng dẫn mua hàng & bảo quản </a>
+                </ul>
+
+                </li>
+                <li><a href="#">Tuyển dụng</a>
+                    <div class="line-Under"></div>
+                </li>
+        </ul>
+        </ul>
+    </div>
+    <!--=================Form:Search======================================== -->
     <div class="modal-search">
         <div id='containerSearch'>
             <div class="search">
@@ -55,157 +205,76 @@
             <p>Mua càng nhiều,Giảm càng sâu.<br>Lên đến 90.000đ</p>
         </div>
     </div>
-    <!-- ======================Form:Header========================================= -->
-    <div class="headerFisrt">
-        <div class="headerFirst-text">
-            <div class="headerFirst-title">
-                <i class="fa-sharp fa-solid fa-globe"></i>
-                <p>Levents Love u </p>
-            </div>
-            <div class="headerFirst-title">
-                <i class="fa-sharp fa-solid fa-bag-shopping"></i>
-                <button>Mua ngay! </button>
+    <!--=================Form:Cart========================================== -->
+    <div class="form-cart">
+        <div class="container-cart">
+            <div class="form-cart-child">
+                <h1>Giỏ hàng</h1>
+                <button id="closeCart">Đóng</button>
             </div>
         </div>
-    </div>
-    <div class="headerTwo">
-        <div class="headerTwo-text">
-            <div class="headerTwo-title">
-                <a href="index.html">
-                    <h1>Levent</h1>
-                </a>
-                <div class="headerTwo-text-one">
-                    <button class="headerTwo-title-btn">
-                        <div class="header-notice">
-                            <i class="fa-regular fa-bell"></i>
-                            <span class="header__cart-notice">1</span>
-                        </div>
-                    </button>
-                    <button class="headerTwo-title-btn">
-                        <p>Sản phẩm yêu thích</p>
-                    </button>
-                    <button id='iconSearch' class="headerTwo-title-btn">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                    <button id="iconCart" class="headerTwo-title-btn">
-                        <i class="fa-sharp fa-solid fa-bag-shopping"></i>
-                        
-                    </button>
-                    <button id='formLogin' class="headerTwo-title-btn">
-                        <i  class="fa-solid fa-user"></i>
-                    </button>
-                    <button class="headerTwo-title-btn">
-                        <i class="fa-solid fa-flag"></i>
-                    </button>
-                </div>
+        <div class="container-cart">
+            <div class="form-cart-child">
+                <h4>Giỏ hàng rỗng</h4>
+            </div>
+        </div>
+        <div class="listcart"></div>
+        <div class="container-cart">
+            <div class="form-cart-child">
+                <h4>Tạm tính</h4>
+                <h4>0 vnd</h4>
+            </div>
+        </div>
+        <div class="container-cart">
+            <div class="form-cart-btn">
+                <button class="btn-buy">Thanh Toán</button>
+            </div>
+        </div>
+        <div class="container-cart">
+            <div class="form-cart-child">
+                <h4>Có thể bạn quan tâm</h4>
 
             </div>
+            <div class="form-cart-img">
+                <div class="form-cart-img-child">
+                    <img width="130px" height="130px" src="./img/aoxamP1.jpeg" alt="">
+                </div>
+                <div class="form-cart-img-child">
+                    <div class="form-cart-tiltle">
+                        <p>Levents® Aquarium Tee/ Black<br>380,000 vnđ</p>
+                        <button class=" btn-cart">Bộ sưu tập mới</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="form-cart-img">
+                <div class="form-cart-img-child">
+                    <img width="130px" height="130px" src="./img/aoxanh1.jpeg" alt="">
+                </div>
+                <div class="form-cart-img-child">
+                    <div class="form-cart-tiltle">
+                        <p>Levents® Aquarium Tee/ Black<br>380,000 vnđ</p>
+                        <button class=" btn-cart">Bộ sưu tập mới</button>
+                    </div>
+                </div>
+            </div>
         </div>
+
+
     </div>
-    <div class="header">
-        <ul class="navigation">
-            <li><a href="#">Về chúng tôi</a>
-                <div class="line-Under"></div>
-            </li>
-            <li><a href="#">Cửa hàng  
-                <i class="fa-solid fa-angle-down"></i>
-             <div class="line-Under"></div>
-             </a>
-                <ul class="sub-menu">
-                    <span class="pesuado"></span>
-                    <li>
-                        <a href="Shirts.html">Áo
-                            <i class="fa-solid fa-angle-down"></i>
-                        </a>
-                        <ul class="sub-menu-2">
-                            <li><a href="#">Áo thun</a></li>
-                            <li><a href="#">Áo polo</a></li>
-                            <li><a href="#">Áo sơ mi</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="PageHomePants.html">Quần
-                        <i class="fa-solid fa-angle-down"></i>
-                        </a>
-                        <ul class="sub-menu-3">
-                            <li>
-                                <a href="PagePantsLong.html">Quần dài
-                                <i class="fa-solid fa-angle-down"></i>
-                            </a>
-                                <ul class="sub-menu-3-second">
-                                    <li><a href="#">Quần jean</a></li>
-                                    <li><a href="#">Quần kaki</a></li>
-                                    <li><a href="#">Quần thể thao</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Quần ngắn</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="Jackets.html">Áo khoác
-                        <i class="fa-solid fa-angle-down"></i>
-                        </a>
-                        <ul class="sub-menu-4">
-                            <li><a href="#">Cardigan</a></li>
-                            <li><a href="#">Hoodie</a></li>
-                            <li><a href="#">Sweater</a></li>
-                            <li><a href="#">Jacket</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="PageBalo.html">Balo</a>
-                    </li>
-                    <li>
-                        <a href="Accessory.html">Phụ kiện
-                            <i class="fa-solid fa-angle-down"></i>
-                        </a>
-                        <ul class="sub-menu-5">
-                            <li><a href="#">Nón</a></li>
-                            <li><a href="#">Vớ</a></li>
-                            <li><a href="#">Dép</a></li>
-                            <li><a href="#">Túi xách</a></li>
-                            <li><a href="#">Ví</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="PageSales.html">Giảm giá</a>
-                <div class="line-Under"></div>
-            </li>
-            <li><a href="BoPhoi.html">Bộ sưu tập</a>
-                <div class="line-Under"></div>
-            </li>
-            <li> <a href="#">Bài viết </a>
-                <div class="line-Under"></div>
-            </li>
-            <li><a href="Contact.html">Liên hệ</a>
-                <div class="line-Under"></div>
-            </li>
-            <li><a href="#">Chăm sóc khách hàng
-                <i class="fa-solid fa-angle-down"></i>
-                <div class="line-Under"></div>
-            </a>
-                <ul class="sub-menu-cskh">
-                    <li><a href="#">Chính sách đổi trả & bảo hành </a>
-                        <li><a href="#">Chính sách vận chuyển </a>
-                            <li><a href="#">Hỏi & đáp</a>
-                                <li><a href="#">Hướng dẫn mua hàng & bảo quản </a>
-                </ul>
-                </li>
-                <li><a href="#">Tuyển dụng</a>
-                    <div class="line-Under"></div>
-                </li>
-        </ul>
-    </div>
-    <!-- Start: cart -->
+
+    <!-- Start: edit cart -->
     <div class="main">
         <div class="bc">
             <div class="con">
                 <p>
                     <a href="index.html">Trang chủ</a> /
+
                     <a class="a2">Thanh toán</a>
                 </p>
             </div>
         </div>
+
         <div class="infor frm__flex__spcBtw">
             <div class="bc frm_information">
                 <section>
@@ -270,7 +339,9 @@
                 <br>
                 <div class="cart__list frm__border ">
                     <div class="cart__item frm__flex">
-                        <img src="./img-Khoa/img1.png" width="30%" alt="">
+
+                        <img src="./img/ao1.jpeg" width="30%" alt="">
+
                         <div class="checkInfo">
                             <a href="Link__sp.html">
                                 <p>Levents Polor Shirt Polo/Green</p>
@@ -305,13 +376,14 @@
 
 
     </div>
-    <!-- End: cart -->
+    <!-- End: edit cart -->
     <br>
     <br>
     <br>
     <br>
     <br>
-    <!-- Start: Footer -->
+
+    <!-- =================Form: Footer======================================= -->
     <footer>
         <div class="container-footer">
             <div class=" container-footer-base container-footer-title">
@@ -384,17 +456,104 @@
         </div>
 
     </footer>
-    <!-- End: Footer -->
-    <script src="./js/functions/pages/home.js"></script>
-    <script src="./js/app.js"></script>
-    <script src="./js/pages/cart_coupon-code.js"></script>
+    <!-- ======================Form:Đăng nhập================================ -->
+    <div id="modal" class="modal">
+        <div class="modal__body">
+            <div id='containerForm' class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <span class="auth-form__switch-btn">Đăng Nhập</span>
+                        <button class="btnClose" id="btnCloseModal">x</button>
+                    </div>
+                    <form onsubmit="Login()" action="">
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <span class="auth-form__dangky">Bạn chưa có tài khoản?         
+                           <a id='btnDangKy' href="#" class="auth-form__dangky--theA">Đăng ký</a>
+                        </span>
+                                <input type="text" id="loginEmail" class="auth-form__input" placeholder="Email"> </div>
+                            <div class="auth-form__group">
+                                <div class="form__group--child">
+                                    <input type="password" id="passw" class="auth-form__input" placeholder="Password">
+                                    <div style="display: flex; align-items: center;" class="">
+                                        <input onclick='togglePassword()' type='checkbox' id='checkbox' style="display:none;">
+                                        <label for='checkbox' style="cursor: pointer;"><i class="check-pass fa-solid fa-eye"></i></label>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy">
+                                <input type="checkbox" value="None" class="checkbox" name="check" /> Ghi nhớ tài khoản
+                            </p>
+                        </div>
+                        <div id="loginError" class="error-message">Sai mật khẩu hoặc email</div>
+                        <div class="auth-form__controls">
+                            <button class="btn-dangky btn--primary">ĐĂNG NHẬP</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ======================Form:Đăng ký================================== -->
+    <div id="modal-dangky-btn" class="modal-dangky">
+        <div class="modal__body">
+            <div id='containerFormDangKy' class="auth-form-dangky">
+                <div class="auth-form__container__dangky">
+                    <div class="auth-form__header__dangky">
+                        <span class="auth-form__switch-btn__dangky">TẠO TÀI KHOẢN</span>
+                        <button id="btnCloseModalTwo">x</button>
+                    </div>
+                    <form onsubmit="signUp()" action="">
+                        <div class="auth-form__form__dangky">
+                            <div class="auth-form__group">
+                                <input type="text" name="" id="nameSign" class='auth-form__input__dangky' placeholder="Họ và tên">
+                                <input type="text" id="emailSign" class="auth-form__input__dangky" placeholder="Email">
+                                <!-- <input type="date" name="" id="birthday" class="auth-form__input__dangky" placeholder="Ngày sinh"> -->
+                                <!-- <input type="number" name="" id="phone"class="auth-form__input__dangky" placeholder="Số điện thoại">  -->
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" id="passwordSign" class="auth-form__input__dangky" placeholder="Mật khẩu">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" id="again-passw" class="auth-form__input__dangky" placeholder="Xác nhận mật khẩu">
+                            </div>
+                        </div>
+
+                        <div class="auth-form__aside-dangky">
+                            <p class="auth-form__policy-dangky">
+                                <input type="checkbox" value="None" class="checkbox" name="check"> Tôi đồng ý với các điều khoản và điều kiện, chính sách bảo mật và chính sách cookie
+                            </p>
+                            <p id="alert-message"></p>
+                        </div>
+                        <div class="auth-form__controls__dangky">
+                            <button id="btn-create-accout" class="btn-dangky btn--primary">TẠO</button>
+                        </div>
+                </div>
+            </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="./js/functions/pages/cart_coupon-code.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/data/data-product.js"></script>
     <script src="./js/data/data-user.js"></script>
+    <script src="./js/functions/dom.js"></script>
     <script src="./js/functions/authentication.js"></script>
     <script src="./js/functions/storage.js"></script>
-    <script src="./js/pages/cart_location.js"></script>
+    <script src="./js/functions/pages/cart_location.js"></script>
     <script src="./js/pages/cart.js"></script>
-    <script src="./js/pages/cart_inforUser.js"></script>
+    <script src="./js/functions/pages/CreateAccout.js"></script>
+    <script src="/js/functions/pages/togglePassword.js"></script>
+    <script src="./js/functions/pages/accout.js"></script>
+    <script src="./js/functions/pages/cart_inforUser.js"></script>
 </body>
 
 </html>
